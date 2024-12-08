@@ -14,12 +14,14 @@ async function main() {
     'The capital of China is Beijing.',
     'You have five fingers on your hand.',
     'The sky is blue on a clear day.',
-    'Water boils at 100 degrees Celsius.'
+    'Water boils at 100 degrees Celsius.',
+    'Me llamo Vernik',
+    'Tengo 27 anios'
   ];
 
 
   // Pregunta que deseas responder
-  const question = 'What is the capital of China?';
+  const question = 'Cuantos anios tienes?';
 
   // Crear input con la consulta y respuestas
   const input = {
