@@ -15,7 +15,6 @@ async function main() {
     'You have five fingers on your hand.',
     'The sky is blue on a clear day.',
     'Water boils at 100 degrees Celsius.',
-    'Me llamo Vernik',
     'Tengo 27 anios',
     'Soy de Guatemala',
     'Mi color favorito es el azul',
