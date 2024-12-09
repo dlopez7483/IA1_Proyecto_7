@@ -126,7 +126,7 @@ const responses = [
 
 let model = null;
 
-// modelo universal center encoder
+// modelo universal sentence encoder
 export async function loadModel() {
   if (!model) {
     model = await use.loadQnA();

@@ -133,7 +133,7 @@ async function main() {
 
 
   // Pregunta que deseas responder
-  const question = 'Cuantos anios tienes?';
+  const question = 'Hola, ¿cómo estás?';
 
   // Crear input con la consulta y respuestas
   const input = {
