@@ -1,11 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 import Mensaje from "./Mensaje";
+import {loadModel, getResponse} from '../utils/modelo'
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState("");
     const chatEndRef = useRef(null); // el useRef se está utilziando para el scroll automático
   
+    useEffect(() => {
+      const initializeModel = async () => {
+        await loadModel();
+      };
+      initializeModel();
+    }, []);
+
     // el scroll se maneja ahora para que vaya bajando automáticamente según ingresan mensajes:
     const scrollToBottom = () => {
       chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -15,16 +23,24 @@ const Chat = () => {
       scrollToBottom(); 
     }, [messages]);
   
-    const handleSendMessage = () => {
+    const handleSendMessage = async () => {
       if (input.trim() === "") return;
   
-      const timestamp = new Date().toLocaleString(); 
+      const timestamp = new Date().toLocaleString();
   
       const userMessage = { text: input, sender: "user", timestamp };
-      const botMessage = { text: "Esta es una respuesta", sender: "bot", timestamp };
+      setMessages((prevMessages) => [...prevMessages, userMessage]);
   
-      setMessages([...messages, userMessage, botMessage]);
-      setInput("");
+      try {
+        const botResponse = await getResponse(input);
+        const botMessage = { text: botResponse, sender: "bot", timestamp };
+        setMessages((prevMessages) => [...prevMessages, botMessage]);
+      } catch (error) {
+        const errorMessage = { text: "Ocurrió un error. Envía un mensaje nuevamente...", sender: "bot", timestamp };
+        setMessages((prevMessages) => [...prevMessages, errorMessage]);
+      }
+  
+      setInput(""); 
     };
   
     const handleKeyPress = (event) => {
