@@ -21,7 +21,7 @@ const Chat = () => {
       const timestamp = new Date().toLocaleString(); 
   
       const userMessage = { text: input, sender: "user", timestamp };
-      const botMessage = { text: "Esta es una respuesta", sender: "bot", timestamp };
+      const botMessage = { text: "Esta es una respuestaaa", sender: "bot", timestamp };
   
       setMessages([...messages, userMessage, botMessage]);
       setInput("");
