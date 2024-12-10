@@ -29,7 +29,11 @@ const Chat = () => {
       const timestamp = new Date().toLocaleString();
   
       const userMessage = { text: input, sender: "user", timestamp };
+<<<<<<< HEAD
       setMessages((prevMessages) => [...prevMessages, userMessage]);
+=======
+      const botMessage = { text: "Esta es una respuestaaa", sender: "bot", timestamp };
+>>>>>>> ramas/201907483
   
       try {
         const botResponse = await getResponse(input);
