@@ -5,11 +5,17 @@ from keras.utils import to_categorical
 from keras.layers import Dense, Embedding, LSTM, Input
 from keras.models import Model
 
+<<<<<<< Updated upstream
 ## DATA
 lines = open('movie_lines.txt', 
              encoding='UTF-8', errors='ignore').read().split('\n')
 convers = open('movie_conversations.txt', 
                encoding='UTF-8', errors='ignore').read().split('\n')
+=======
+# Rutas de los archivos
+movie_lines_path = "movie_lines2.txt"
+movie_conversations_path = "movie_conversations.txt"
+>>>>>>> Stashed changes
 
 exchn = []
 for conver in convers:
