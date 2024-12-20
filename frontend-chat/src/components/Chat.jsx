@@ -1,12 +1,38 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Mensaje from "./Mensaje";
-import { getResponse } from "../models/modelo_js/modelHandler"; // Importar la función
+import * as tf from "@tensorflow/tfjs"; // Importa TensorFlow.js para manejar el modelo
+
+let model;
+let tokenizer;
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false); // Estado para manejar la carga
   const chatEndRef = useRef(null); // Para el scroll automático
+
+  // Cargar el modelo y el tokenizador al iniciar el componente
+  useEffect(() => {
+    const loadModelAndTokenizer = async () => {
+      try {
+        console.log("Cargando modelo...");
+        model = await tf.loadLayersModel("/modelo/modeloo.json"); // Ruta al modelo
+        console.log("Modelo cargado correctamente.");
+      } catch (error) {
+        console.error("Error al cargar el modelo:", error);
+      }
+
+      try {
+        console.log("Cargando tokenizer...");
+        const tokenizerResponse = await fetch("/modelo/tokenizer.json"); // Ruta al tokenizador
+        tokenizer = await tokenizerResponse.json();
+        console.log("Tokenizer cargado correctamente.");
+      } catch (error) {
+        console.error("Error al cargar el tokenizer:", error);
+      }
+    };
+
+    loadModelAndTokenizer();
+  }, []);
 
   // Hacer scroll hacia abajo cuando se agregan mensajes
   const scrollToBottom = () => {
@@ -17,7 +43,45 @@ const Chat = () => {
     scrollToBottom(); // Scroll automático
   }, [messages]);
 
-  // Manejar el envío de mensajes
+  // Tokenizar la entrada del usuario
+  const tokenizeInput = (text) => {
+    if (!tokenizer || !tokenizer.word_index) {
+      console.error("Tokenizer o word_index no cargado correctamente.");
+      return [];
+    }
+
+    const words = text.toLowerCase().replace(/[^\w\s]/g, "").split(" ");
+    return words
+      .map((word) => tokenizer.word_index[word] || 0) // Convierte las palabras en índices (0 si no está en word_index)
+      .filter((index) => index > 0); // Filtra palabras no encontradas (si es necesario)
+  };
+
+  // Padding de las secuencias
+  const padSequences = (sequences, maxLength) => {
+    const padded = Array.from({ length: maxLength }, () => 0);
+    for (let i = 0; i < Math.min(sequences.length, maxLength); i++) {
+      padded[i] = sequences[i];
+    }
+    return [padded];
+  };
+
+  // Obtener respuesta del modelo
+  const getResponse = async (inputText) => {
+    if (!model || !tokenizer) {
+      console.error("Modelo o tokenizador no cargado.");
+      return "Error al cargar el modelo.";
+    }
+
+    const sequences = tokenizeInput(inputText); // Tokenizar entrada
+    const paddedSequences = padSequences(sequences, model.inputs[0].shape[1]); // Padding
+    const prediction = model.predict(tf.tensor2d(paddedSequences)); // Predicción
+
+    // Extraer la respuesta generada (si es texto)
+    const response = await prediction.data(); // Obtiene las probabilidades o texto generado
+    return response.join(" "); // Ajusta según el formato de tu modelo
+  };
+
+  // Manejar envío de mensajes
   const handleSendMessage = async () => {
     if (input.trim() === "") return; // No enviar mensajes vacíos
 
@@ -25,10 +89,7 @@ const Chat = () => {
     const userMessage = { text: input, sender: "user", timestamp };
     setMessages((prevMessages) => [...prevMessages, userMessage]);
 
-    setIsLoading(true);
-
     try {
-      // Llamar a la función getResponse para obtener la respuesta del modelo
       const botResponse = await getResponse(input);
       const botMessage = { text: botResponse, sender: "bot", timestamp };
       setMessages((prevMessages) => [...prevMessages, botMessage]);
@@ -39,10 +100,9 @@ const Chat = () => {
         timestamp,
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
-      console.error("Error al obtener la respuesta:", error);
+      console.error("Error al predecir:", error);
     }
 
-    setIsLoading(false); // Finalizar el estado de carga
     setInput(""); // Limpiar el campo de entrada
   };
 
@@ -57,7 +117,6 @@ const Chat = () => {
     <div className="chat-container">
       <div className="chat-header">Modelo IA Fase 1</div>
       <div className="chat-messages">
-        {isLoading && <p>Cargando respuesta...</p>}
         {messages.map((msg, index) => (
           <Mensaje
             key={index}
