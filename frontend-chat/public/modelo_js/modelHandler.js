@@ -1,18 +1,15 @@
 import * as tf from '@tensorflow/tfjs';
 import * as fs from 'fs';
 import * as readline from 'readline';
+const modelJson = JSON.parse(fs.readFileSync('modeloo.json'));
+const tokenizerJson = JSON.parse(fs.readFileSync('tokenizer.json'));
 
-// Cargar el JSON del modelo y del tokenizer
-const modelJson = JSON.parse(fs.readFileSync('modeloo.json')); // Cargar el modelo desde un archivo JSON
-const tokenizerJson = JSON.parse(fs.readFileSync('tokenizer.json')); // Cargar el tokenizer
+const wordIndex = JSON.parse(tokenizerJson['config']['word_index']);
 
-const wordIndex = tokenizerJson['config']['word_index']; // Obtener el word_index del tokenizer
-
-// Cargar el modelo desde la memoria
-const model = await tf.loadLayersModel(tf.io.fromMemory(modelJson)); // Cargar el modelo desde el objeto en memoria
+// Cargando el modelo desde la memoria
+const model = await tf.loadLayersModel(tf.io.fromMemory(modelJson));
 console.log(model.summary());
 
-// Función para convertir texto en secuencias de índices
 function textsToSequences(texts) {
     return texts.map(text => {
         const words = text.toLowerCase().trim().split(" ");
@@ -20,7 +17,6 @@ function textsToSequences(texts) {
     });
 }
 
-// Función para rellenar o truncar las secuencias
 function padSequences(sequences, maxLength, paddingType = 'pre', truncatingType = 'pre', paddingValue = 0) {
     return sequences.map(seq => {
         if (seq.length > maxLength) {
@@ -48,7 +44,6 @@ function padSequences(sequences, maxLength, paddingType = 'pre', truncatingType 
     });
 }
 
-// Crear interfaz para capturar la entrada del usuario
 const r1 = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -64,13 +59,16 @@ const askQuestion = (question) => {
 
 const main = async () => {
     let user_input = await askQuestion("Ingrese una frase: ");
-    user_input = user_input.toLowerCase();
+    user_input = user_input.toLowerCase().trim();
 
-    // Convertir la entrada del usuario en secuencias de índices
+    if (user_input === '') {
+        console.log("La entrada está vacía. Por favor ingrese una frase.");
+        return;
+    }
+
     let sequences = textsToSequences([user_input]);
     console.log("Tokenized sequences:", sequences);
 
-    // Aplicar padding a las secuencias
     sequences = padSequences(sequences, 5, 'pre', 'pre', 0);
     console.log("Padded sequences:", sequences);
 
@@ -80,9 +78,11 @@ const main = async () => {
 
     // Realizar una predicción
     const prediction = model.predict(tensorInput);
+    prediction.print();  // Imprimir el resultado de la predicción
 
-      // Imprimir el resultado de la predicción
-    console.log("Predicción para el índice:", prediction.print());
+    // Si es una clasificación, podrías hacer algo como:
+    // const predictedClass = prediction.argMax(-1);
+    // predictedClass.print();
 }
 
 main();
