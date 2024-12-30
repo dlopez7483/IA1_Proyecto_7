@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from keras.layers import Dense, Embedding, LSTM, Input, Flatten
 from keras.models import Model, load_model
 from sklearn.preprocessing import LabelEncoder
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
 # Cargar los datos del archivo intents.json
 with open('intents.json', 'r', encoding='utf-8') as content:
@@ -27,6 +27,7 @@ for intent in data['intents']:
         patterns.append(line)
         tags.append(intent['tag'])
 
+# Crear el DataFrame para procesamiento adicional
 data = pd.DataFrame({"patterns": patterns, "tags": tags})
 data['patterns'] = data['patterns'].apply(
     lambda wrd: [ltrs.lower() for ltrs in wrd if ltrs not in string.punctuation])
@@ -61,7 +62,18 @@ model.fit(x_train, y_train, epochs=200)
 model.save('model.h5')
 
 # Configurar el traductor
-translator = Translator()
+translator = GoogleTranslator()
+
+# Función para detectar el idioma
+def detectar_idioma(mensaje):
+    try:
+        traducido = translator.translate(mensaje, target='en')
+        if mensaje.lower() == traducido.lower():
+            return 'en'
+        else:
+            return 'es'
+    except:
+        return 'es'  # Por defecto, asumir español
 
 # Chatbot en acción
 while True:
@@ -69,33 +81,27 @@ while True:
     prediction_input = input("You: ")
 
     # Detectar el idioma del usuario
-    detected_lang = translator.detect(prediction_input).lang
+    idioma_detectado = detectar_idioma(prediction_input)
+    print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
-    # Traducir al inglés para predecir
-    if detected_lang != 'en':
-        prediction_input_translated = translator.translate(
-            prediction_input, dest='en').text
-    else:
-        prediction_input_translated = prediction_input
-
-    # Preprocesar texto traducido
-    prediction_input_translated = [letter.lower()
-                                   for letter in prediction_input_translated if letter not in string.punctuation]
-    prediction_input_translated = ''.join(prediction_input_translated)
-    texts_p.append(prediction_input_translated)
+    # Preprocesar el texto del usuario
+    prediction_input = [letter.lower() for letter in prediction_input if letter not in string.punctuation]
+    prediction_input = ''.join(prediction_input)
+    texts_p.append(prediction_input)
 
     prediction_input = tokenizer.texts_to_sequences(texts_p)
-    prediction_input = pad_sequences(prediction_input, input_shape)
+    prediction_input = pad_sequences(prediction_input, maxlen=input_shape)
 
-    # Predecir y obtener la respuesta
+    # Predecir y obtener el intent
     output = model.predict(prediction_input)
     output = output.argmax()
 
     response_tag = le.inverse_transform([output])[0]
-    response = random.choice(responses[response_tag])
 
-    # Traducir la respuesta al idioma detectado
-    if detected_lang != 'en':
-        response = translator.translate(response, dest=detected_lang).text
+    # Seleccionar la respuesta en el idioma correcto
+    if idioma_detectado in responses[response_tag]:
+        response = random.choice(responses[response_tag][idioma_detectado])
+    else:
+        response = "Lo siento, no tengo una respuesta en tu idioma."
 
     print("Chatbot:", response)
