@@ -1,37 +1,83 @@
 {
-    "intents":[
-        {"tag":"greeting",
-        "patterns":["Hi","How are you","Is anyone there?","Hello","Good day","Hola", "Buenas", "Qué tal"],
-        "responses":["Hello, thanks for visiting","Good to see you again", "Hi there, how can I help?","¡Hola!", "¡Qué tal!","En que puedo ayudarte"],
-        "context_set":""
-    },
-    {"tag":"goodbye",
-        "patterns":["Bye","See you later","Goodbye","Good day","Adiós","Adios","Hasta luego"],
-        "responses":["See you later,, thanks for visiting","Have a nice day", "Bye! Come back again","¡Adiós!", "¡Hasta luego!","Nos vemos pronto"]
-    },
-    {"tag":"thanks",
-        "patterns":["Thanks","Thank you","That's helpful"],
-        "responses":["Happy to help!", "Any time!", "My pleasure"]
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hola", "Buenas", "Qué tal"
+      ],
+      "responses": {
+        "en": [
+          "Hello, thanks for visiting",
+          "Good to see you again",
+          "Hi there, how can I help?"
+        ],
+        "es": [
+          "¡Hola!",
+          "¡Qué tal!",
+          "En qué puedo ayudarte"
+        ]
+      },
+      "context_set": ""
     },
     {
-        "tag": "code_request",
-        "patterns": [
-          "Generar código para sumar dos números",
-          "Escribe un programa para ordenar una lista",
-          "Genera código para calcular el área de un círculo",
-          "Necesito un código que sume dos números",
-          "Create a program to sum two numbers",
-          "Write a program to sort a list",
-          "Generate code to calculate the area of a circle"
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "See you later", "Goodbye", "Good day", "Adiós", "Adios", "Hasta luego"
+      ],
+      "responses": {
+        "en": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again"
         ],
-        "responses": [
-          "Aquí está el código en Python para sumar dos números:\n```python\ndef sumar(a, b):\n    return a + b\n\nprint(sumar(2, 3))```",
-          "Aquí está el código en Python para ordenar una lista:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Lista ordenada:', my_list)```",
-          "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_circulo(5))```",
+        "es": [
+          "¡Adiós!",
+          "¡Hasta luego!",
+          "Nos vemos pronto"
+        ]
+      }
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful"
+      ],
+      "responses": {
+        "en": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure"
+        ],
+        "es": [
+          "¡Con gusto!",
+          "¡A cualquier hora!",
+          "¡Es un placer!"
+        ]
+      }
+    },
+    {
+      "tag": "code_request",
+      "patterns": [
+        "Generar código para sumar dos números",
+        "Escribe un programa para ordenar una lista",
+        "Genera código para calcular el área de un círculo",
+        "Necesito un código que sume dos números",
+        "Create a program to sum two numbers",
+        "Write a program to sort a list",
+        "Generate code to calculate the area of a circle"
+      ],
+      "responses": {
+        "en": [
           "Here's the Python code to sum two numbers:\n```python\ndef add(a, b):\n    return a + b\n\nprint(add(2, 3))```",
           "Here's the Python code to sort a list:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Sorted list:', my_list)```",
           "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
+        ],
+        "es": [
+          "Aquí está el código en Python para sumar dos números:\n```python\ndef sumar(a, b):\n    return a + b\n\nprint(sumar(2, 3))```",
+          "Aquí está el código en Python para ordenar una lista:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Lista ordenada:', my_list)```",
+          "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_circulo(5))```"
         ]
       }
-    ]
+    }
+  ]
 }
