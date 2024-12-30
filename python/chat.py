@@ -64,7 +64,6 @@ def mensaje (messaje):
 
     # Detectar el idioma del usuario
  idioma_detectado = detectar_idioma(prediction_input)
- print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
     # Preprocesar el texto del usuario
  prediction_input = [letter.lower() for letter in prediction_input if letter not in string.punctuation]
