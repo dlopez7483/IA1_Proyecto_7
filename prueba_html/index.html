@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probar Modelo en Navegador</title>
+    <!-- Importa TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <!-- Importa el script del modelo -->
+    <script src="test-model.js"></script>
+</head>
+<body>
+    <h1>Prueba del Modelo en el Navegador</h1>
+    <input type="text" id="input-text" placeholder="Escribe tu entrada" />
+    <button id="predict-button">Predecir</button>
+    <p id="output"></p>
+    <script>
+        // Configurar la interacción con la página
+        document.getElementById('predict-button').addEventListener('click', async () => {
+            const input = document.getElementById('input-text').value;
+            const outputElement = document.getElementById('output');
+
+            try {
+                // Llama a la función testModel con la entrada del usuario
+                const prediction = await testModel(input);
+                outputElement.textContent = Predicción: ${prediction};
+            } catch (error) {
+                console.error(error);
+                outputElement.textContent = Error: ${error.message};
+            }
+        });
+    </script>
+</body>
+</html>
