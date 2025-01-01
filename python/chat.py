@@ -9,81 +9,88 @@ from sklearn.preprocessing import LabelEncoder
 from deep_translator import GoogleTranslator
 import pandas as pd
 
-with open('intents.json', 'r', encoding='utf-8') as content:
-    data = json.load(content)
+class Chatbot:
+    def __init__(self, intents_file, model_file):
+        self.intents_file = intents_file
+        self.model_file = model_file
+        self.responses = {}
+        self.tokenizer = None
+        self.le = None
+        self.input_shape = None
+        self.translator = GoogleTranslator()
+        self.model = None
+        self._load_data()
+        self._prepare_model()
 
-# Preprocesar los datos
-tags = []
-patterns = []
-responses = {}
+    def _load_data(self):
+        with open(self.intents_file, 'r', encoding='utf-8') as content:
+            data = json.load(content)
 
-for intent in data['intents']:
-    responses[intent['tag']] = intent['responses']
-    for line in intent['patterns']:
-        patterns.append(line)
-        tags.append(intent['tag'])
+        # Preprocesar los datos
+        tags = []
+        patterns = []
+        for intent in data['intents']:
+            self.responses[intent['tag']] = intent['responses']
+            for line in intent['patterns']:
+                patterns.append(line)
+                tags.append(intent['tag'])
 
-# Crear el DataFrame para procesamiento adicional
-data = pd.DataFrame({"patterns": patterns, "tags": tags})
-data['patterns'] = data['patterns'].apply(
-    lambda wrd: [ltrs.lower() for ltrs in wrd if ltrs not in string.punctuation])
-data['patterns'] = data['patterns'].apply(lambda wrd: ''.join(wrd))
+        # Crear el DataFrame para procesamiento adicional
+        df = pd.DataFrame({"patterns": patterns, "tags": tags})
+        df['patterns'] = df['patterns'].apply(
+            lambda wrd: [ltrs.lower() for ltrs in wrd if ltrs not in string.punctuation])
+        df['patterns'] = df['patterns'].apply(lambda wrd: ''.join(wrd))
 
-# Configurar el tokenizador
-tokenizer = Tokenizer(num_words=2000)
-tokenizer.fit_on_texts(data['patterns'])
-train = tokenizer.texts_to_sequences(data['patterns'])
+        # Configurar el tokenizador
+        self.tokenizer = Tokenizer(num_words=2000)
+        self.tokenizer.fit_on_texts(df['patterns'])
 
-x_train = pad_sequences(train)
-le = LabelEncoder()
-y_train = le.fit_transform(data['tags'])
+        train = self.tokenizer.texts_to_sequences(df['patterns'])
+        self.x_train = pad_sequences(train)
 
-input_shape = x_train.shape[1]
-vocabulary = len(tokenizer.word_index)
-output_length = le.classes_.shape[0]
-translator = GoogleTranslator()
-print("ejecutandose")
+        self.le = LabelEncoder()
+        self.y_train = self.le.fit_transform(df['tags'])
 
-model = load_model('model.h5')
+        self.input_shape = self.x_train.shape[1]
 
-# Función para detectar el idioma
-def detectar_idioma(mensaje):
-    try:
-        traducido = translator.translate(mensaje, target='en')
-        if mensaje.lower() == traducido.lower():
-            return 'en'
-        else:
-            return 'es'
-    except:
-        return 'es'  # Por defecto, asumir español
+    def _prepare_model(self):
+        self.model = load_model(self.model_file)
 
+    def detectar_idioma(self, mensaje):
+        try:
+            traducido = self.translator.translate(mensaje, target='en')
+            if mensaje.lower() == traducido.lower():
+                return 'en'
+            else:
+                return 'es'
+        except:
+            return 'es'  # Por defecto, asumir español
 
-def mensaje (messaje):
- texts_p = []
- prediction_input = messaje
+    def responder(self, mensaje):
+        texts_p = []
+        prediction_input = mensaje
+
+        # Detectar el idioma del usuario
+        idioma_detectado = self.detectar_idioma(prediction_input)
+        print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
     # Detectar el idioma del usuario
  idioma_detectado = detectar_idioma(prediction_input)
+ print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
-    # Preprocesar el texto del usuario
- prediction_input = [letter.lower() for letter in prediction_input if letter not in string.punctuation]
- prediction_input = ''.join(prediction_input)
- texts_p.append(prediction_input)
+        prediction_input = self.tokenizer.texts_to_sequences(texts_p)
+        prediction_input = pad_sequences(prediction_input, maxlen=self.input_shape)
 
- prediction_input = tokenizer.texts_to_sequences(texts_p)
- prediction_input = pad_sequences(prediction_input, maxlen=input_shape)
+        # Predecir y obtener el intent
+        output = self.model.predict(prediction_input)
+        output = output.argmax()
 
-    # Predecir y obtener el intent
- output = model.predict(prediction_input)
- output = output.argmax()
+        response_tag = self.le.inverse_transform([output])[0]
 
- response_tag = le.inverse_transform([output])[0]
+        # Seleccionar la respuesta en el idioma correcto
+        if idioma_detectado in self.responses.get(response_tag, {}):
+            response = random.choice(self.responses[response_tag][idioma_detectado])
+        else:
+            response = "Lo siento, no tengo una respuesta en tu idioma."
 
-    # Seleccionar la respuesta en el idioma correcto
- if idioma_detectado in responses[response_tag]:
-        response = random.choice(responses[response_tag][idioma_detectado])
- else:
-        response = "Lo siento, no tengo una respuesta en tu idioma."
-
- return response
-
+        return response
