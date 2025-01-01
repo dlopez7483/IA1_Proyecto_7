@@ -1,7 +1,7 @@
-from chat import Chatbot
-
+#from chat import Chatbot
+from chat import responder
 # Crear una instancia del Chatbot
-chatbot = Chatbot('intents2.json', 'model.h5')
+##chatbot = Chatbot('intents.json', 'model.h5')
 
 # Interactuar con el chatbot
 while True:
@@ -9,5 +9,6 @@ while True:
     if user_input.lower() in ['exit', 'quit']:
         print("Chatbot: ¡Adiós!")
         break
-    response = chatbot.responder(user_input)
+    ##response = chatbot.responder(user_input)
+    response = responder(user_input)
     print(f"Chatbot: {response}")
