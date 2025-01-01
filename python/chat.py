@@ -42,7 +42,7 @@ input_shape = x_train.shape[1]
 vocabulary = len(tokenizer.word_index)
 output_length = le.classes_.shape[0]
 translator = GoogleTranslator()
-
+print("ejecutandose")
 
 model = load_model('model.h5')
 
