@@ -1,161 +1,170 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi", "How","are","you", "Is" ,"anyone", "there?", "Hello", "Good day", "Hola", "Buenas", "Que tal"
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Good day", "How are you", "Is anyone there?", "Hola", "Buenas", "Que tal"
+      ],
+      "responses": {
+        "en": [
+          "Hello, thanks for visiting",
+          "Good to see you again",
+          "Hi there, how can I help?"
         ],
-        "responses": {
-          "en": [
-            "Hello, thanks for visiting",
-            "Good to see you again",
-            "Hi there, how can I help?"
-          ],
-          "es": [
-            "¡Hola!",
-            "¡Qué tal!",
-            "En qué puedo ayudarte"
-          ]
-        },
-        "context_set": ""
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye", "See","you ","later", "Goodbye", "Good day", "Adios", "Hasta"," luego"
-        ],
-        "responses": {
-          "en": [
-            "See you later, thanks for visiting",
-            "Have a nice day",
-            "Bye! Come back again"
-          ],
-          "es": [
-            "¡Adiós!",
-            "¡Hasta luego!",
-            "Nos vemos pronto"
-          ]
-        }
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "Thanks", "Thank you", "That's helpful"
-        ],
-        "responses": {
-          "en": [
-            "Happy to help!",
-            "Any time!",
-            "My pleasure"
-          ],
-          "es": [
-            "¡Con gusto!",
-            "¡A cualquier hora!",
-            "¡Es un placer!"
-          ]
-        }
-      },
-      {
-        "tag": "loops",
-        "patterns": [
-            "Como", "usar", "un", "for",
-            "Ejemplo", "de", "un", "bucle",
-            "Codigo", "para", "un", "for", "loop",
-            "Escribir", "un", "programa", "con", "un", "while",
-            "Example", "of", "a", "for", "loop",
-            "Generate", "code", "for", "a", "while", "loop",
-            "How", "to", "use", "loops", "in", "Python"
-        ],
-        "responses": {
-            "en": [
-                "Here's the Python code to use a for loop:\n```python\nfor i in range(5):\n    print(i)```",
-                "Here's the Python code for a while loop:\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1```",
-                "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```",
-                "Here’s an example of a while loop in Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteration:', n)\n    n += 1```"
-            ],
-            "es": [
-                "Aquí está el código en Python para usar un bucle for:\n```python\nfor i in range(5):\n    print(i)```",
-                "Aquí está el código en Python para un bucle while:\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1```",
-                "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```",
-                "Aquí tienes un ejemplo de un bucle while en Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteración:', n)\n    n += 1```"
-            ]
-        }
+        "es": [
+          "¡Hola!",
+          "¡Qué tal!",
+          "¿En qué puedo ayudarte?"
+        ]
+      }
     },
     {
-        "tag": "lists",
-        "patterns": [
-            "Como", "ordenar", "una", "lista",
-            "Codigo", "para", "manejar", "listas",
-            "Ejemplo", "con", "append", "eliminar",
-            "Example", "of", "sorting", "a", "list",
-            "How", "to", "use", "append", "in", "Python",
-            "Generate", "Python", "code", "for", "list", "operations"
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "Good day", "Adios", "Hasta luego", "Nos vemos"
+      ],
+      "responses": {
+        "en": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again"
         ],
-        "responses": {
-            "en": [
-                "Here's the Python code to sort a list:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Sorted list:', my_list)```",
-                "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```",
-                "Here’s Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```",
-                "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
-            ],
-            "es": [
-                "Aquí está el código en Python para ordenar una lista:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort()\nprint('Lista ordenada:', mi_lista)```",
-                "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```",
-                "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```",
-                "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
-            ]
-        }
+        "es": [
+          "¡Adiós!",
+          "¡Hasta luego!",
+          "Nos vemos pronto"
+        ]
+      }
     },
     {
-        "tag": "algorithms",
-        "patterns": [
-            "Como", "implementar", "un", "algoritmo",
-            "Ejemplo", "de", "algoritmo",
-            "Escribir", "un", "codigo", "para", "encontrar", "el", "MCD",
-            "How", "to", "implement", "an", "algorithm", "in", "Python",
-            "Example", "of", "Python", "algorithm",
-            "Generate", "code", "for", "gcd", "algorithm"
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Gracias", "Muy amable", "Te lo agradezco"
+      ],
+      "responses": {
+        "en": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure"
         ],
-        "responses": {
-            "en": [
-                "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```",
-                "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```",
-                "Here’s Python code for a factorial algorithm:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
-                "Here's Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
-            ],
-            "es": [
-                "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```",
-                "Aquí está el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef ordenamiento_burbuja(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nordenamiento_burbuja(arr)\nprint('Arreglo ordenado:', arr)```",
-                "Aquí tienes un código en Python para un algoritmo de factorial:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
-                "Aquí está el código en Python para la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
-            ]
-        }
+        "es": [
+          "¡Con gusto!",
+          "¡A cualquier hora!",
+          "¡Es un placer!"
+        ]
+      }
     },
     {
-        "tag": "math_operations",
-        "patterns": [
-            "Como", "sumar", "dos", "numeros",
-            "Escribir", "codigo", "para", "restar",
-            "Multiplicar", "en", "Python",
-            "How", "to", "add", "numbers", "in", "Python",
-            "Generate", "code", "to", "calculate", "division",
-            "Python", "code", "for", "basic", "math", "operations"
+      "tag": "forloop",
+      "patterns": [
+        "How to use a for loop", "Example of a for loop", "Codigo para un bucle for", "for loop", "bucle", "Python loops", "loop examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use a for loop:\n```python\nfor i in range(5):\n    print(i)```",
+          "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```",
+          "Here’s an example of a while loop in Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteration:', n)\n    n += 1```"
         ],
-        "responses": {
-            "en": [
-                "Here's Python code to add two numbers:\n```python\ndef add(a, b):\n    return a + b\n\nprint(add(2, 3))```",
-                "Here's Python code for multiplication:\n```python\ndef multiply(a, b):\n    return a * b\n\nprint(multiply(4, 5))```",
-                "Here's Python code for subtraction:\n```python\ndef subtract(a, b):\n    return a - b\n\nprint(subtract(10, 5))```",
-                "Here's Python code for division:\n```python\ndef divide(a, b):\n    if b == 0:\n        return 'Cannot divide by zero'\n    return a / b\n\nprint(divide(10, 2))```"
-            ],
-            "es": [
-                "Aquí está el código en Python para sumar dos números:\n```python\ndef sumar(a, b):\n    return a + b\n\nprint(sumar(2, 3))```",
-                "Aquí está el código en Python para multiplicar:\n```python\ndef multiplicar(a, b):\n    return a * b\n\nprint(multiplicar(4, 5))```",
-                "Aquí está el código en Python para restar:\n```python\ndef restar(a, b):\n    return a - b\n\nprint(restar(10, 5))```",
-                "Aquí tienes el código en Python para dividir:\n```python\ndef dividir(a, b):\n    if b == 0:\n        return 'No se puede dividir entre cero'\n    return a / b\n\nprint(dividir(10, 2))```"
-            ]
-        }
+        "es": [
+          "Aquí está el código en Python para usar un bucle for:\n```python\nfor i in range(5):\n    print(i)```",
+          "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```",
+          "Aquí tienes un ejemplo de un bucle while en Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteración:', n)\n    n += 1```"
+        ]
+      }
+    },
+    {
+      "tag": "list_sort",
+      "patterns": [
+        "How to sort a list", "Sorting lists in Python", "Sort list", "ordenar lista", "sorting", "list"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to sort a list:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Sorted list:', my_list)```"
+        ],
+        "es": [
+          "Aquí está el código en Python para ordenar una lista:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort()\nprint('Lista ordenada:', mi_lista)```"
+        ]
+      }
+    },
+    {
+      "tag": "list_append",
+      "patterns": [
+        "How to add an item to a list", "Example with append", "Appending to a list in Python", "Cómo agregar un elemento a una lista", "append", "añadir lista"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```"
+        ],
+        "es": [
+          "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
+        ]
+      }
+    },
+    {
+      "tag": "list_remove",
+      "patterns": [
+        "How to remove an item from a list", "Example with remove", "Removing items from a list in Python", "Cómo eliminar un elemento de una lista", "remove", "quitar lista"
+      ],
+      "responses": {
+        "en": [
+          "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
+        ],
+        "es": [
+          "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
+        ]
+      }
+    },
+    {
+      "tag": "list_reverse_sort",
+      "patterns": [
+        "How to sort a list in reverse order", "Sort list in reverse", "Reversed sorting in Python", "ordenar","lista ","reversa", "orden inverso"
+      ],
+      "responses": {
+        "en": [
+          "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
+        ],
+        "es": [
+          "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
+        ]
+      }
+    },
+    {
+      "tag": "algorithms",
+      "patterns": [
+        "How to implement an algorithm in Python", "Example of Python algorithm", "Generate code for gcd algorithm", "Cómo implementar un algoritmo", "Ejemplo de algoritmo", "algoritmo", "gcd"
+      ],
+      "responses": {
+        "en": [
+          "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```",
+          "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```",
+          "Here’s Python code for a factorial algorithm:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
+          "Here's Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+        ],
+        "es": [
+          "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n   while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```",
+          "Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```",
+          "Aquí tienes el código en Python para un algoritmo factorial:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
+          "Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+        ]
+      }
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help", "Help me", "I need help", "Ayuda", "Ayúdame", "Necesito ayuda"
+      ],
+      "responses": {
+        "en": [
+          "Sure, I can help you. What do you need?",
+          "I'm here to help. What can I do for you?",
+          "How can I assist you?"
+        ],
+        "es": [
+          "Claro, puedo ayudarte. ¿Qué necesitas?",
+          "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
+          "¿Cómo puedo ayudarte?"
+        ]
+      }
     }
-    ]
-  }
-  
+  ]
+}     
