@@ -3,7 +3,7 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Hola", "Buenas", "Qué tal"
+        "Hi", "How","are","you", "Is" ,"anyone", "there?", "Hello", "Good day", "Hola", "Buenas", "Que tal"
       ],
       "responses": {
         "en": [
@@ -22,7 +22,7 @@
     {
       "tag": "goodbye",
       "patterns": [
-        "Bye", "See you later", "Goodbye", "Good day", "Adiós", "Adios", "Hasta luego"
+        "Bye", "See","you ","later", "Goodbye", "Good day", "Adiós", "Hasta"," luego"
       ],
       "responses": {
         "en": [
@@ -58,13 +58,13 @@
     {
       "tag": "code_request",
       "patterns": [
-        "Generar código para sumar dos números",
-        "Escribe un programa para ordenar una lista",
-        "Genera código para calcular el área de un círculo",
-        "Necesito un código que sume dos números",
-        "Create a program to sum two numbers",
-        "Write a program to sort a list",
-        "Generate code to calculate the area of a circle"
+        "Generar", "código" ,"para" ,"sumar", "dos numeros",
+        "Escribe", "un programa" ,"ordenar", "una lista",
+        "Genera", "calcular" ,"el", "area", "de un", "círculo",
+        "Necesito","un","que", "sume",
+        "Create", " program", "to sum", "two numbers",
+        "Write", "a","to", "sort," ,"list",
+        "Generate", "code", "calculate" ,"the","area of a circle"
       ],
       "responses": {
         "en": [

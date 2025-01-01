@@ -67,30 +67,30 @@ class Chatbot:
             return 'es'  # Por defecto, asumir español
 
     def responder(self, mensaje):
-        texts_p = []
-        prediction_input = mensaje
+            texts_p = []
+            prediction_input = mensaje
 
-        # Detectar el idioma del usuario
-        idioma_detectado = self.detectar_idioma(prediction_input)
-        print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
+            # Detectar el idioma del usuario
+            idioma_detectado = self.detectar_idioma(prediction_input)
+            print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
-    # Detectar el idioma del usuario
- idioma_detectado = detectar_idioma(prediction_input)
- print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
-        prediction_input = self.tokenizer.texts_to_sequences(texts_p)
-        prediction_input = pad_sequences(prediction_input, maxlen=self.input_shape)
+            idioma_detectado = self.detectar_idioma(prediction_input)
+            print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
 
-        # Predecir y obtener el intent
-        output = self.model.predict(prediction_input)
-        output = output.argmax()
+            prediction_input = self.tokenizer.texts_to_sequences(texts_p)
+            prediction_input = pad_sequences(prediction_input, maxlen=self.input_shape)
 
-        response_tag = self.le.inverse_transform([output])[0]
+            # Predecir y obtener el intent
+            output = self.model.predict(prediction_input)
+            output = output.argmax()
 
-        # Seleccionar la respuesta en el idioma correcto
-        if idioma_detectado in self.responses.get(response_tag, {}):
-            response = random.choice(self.responses[response_tag][idioma_detectado])
-        else:
-            response = "Lo siento, no tengo una respuesta en tu idioma."
+            response_tag = self.le.inverse_transform([output])[0]
 
-        return response
+            # Seleccionar la respuesta en el idioma correcto
+            if idioma_detectado in self.responses.get(response_tag, {}):
+                response = random.choice(self.responses[response_tag][idioma_detectado])
+            else:
+                response = "Lo siento, no tengo una respuesta en tu idioma."
+
+            return response

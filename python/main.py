@@ -1,7 +1,7 @@
 from chat import Chatbot
 
 # Crear una instancia del Chatbot
-chatbot = Chatbot('intents.json', 'model.h5')
+chatbot = Chatbot('intents2.json', 'model.h5')
 
 # Interactuar con el chatbot
 while True:
