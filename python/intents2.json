@@ -57,25 +57,23 @@
     {
       "tag": "forloop",
       "patterns": [
-        "How to use a for loop", "Example of a for loop", "Codigo para un bucle for", "for loop", "bucle", "Python loops", "loop examples"
+        "How to use", "a" ,"for" ,"loop", "Example","of a ","for loop", "Codigo" ,"para" ,"bucle for", "Ejemplo","for loop", "bucle", "Python loops", "loop examples"
       ],
       "responses": {
         "en": [
           "Here's the Python code to use a for loop:\n```python\nfor i in range(5):\n    print(i)```",
-          "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```",
-          "Here’s an example of a while loop in Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteration:', n)\n    n += 1```"
+          "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```"
         ],
         "es": [
           "Aquí está el código en Python para usar un bucle for:\n```python\nfor i in range(5):\n    print(i)```",
-          "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```",
-          "Aquí tienes un ejemplo de un bucle while en Python:\n```python\nn = 0\nwhile n < 3:\n    print('Iteración:', n)\n    n += 1```"
+          "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```"
         ]
       }
     },
     {
       "tag": "list_sort",
       "patterns": [
-        "How to sort a list", "Sorting lists in Python", "Sort list", "ordenar lista", "sorting", "list"
+        "How to", "sort a list", "Sorting lists", "Sort list", "sorting", "list","ordenar","lista"
       ],
       "responses": {
         "en": [
@@ -89,7 +87,7 @@
     {
       "tag": "list_append",
       "patterns": [
-        "How to add an item to a list", "Example with append", "Appending to a list in Python", "Cómo agregar un elemento a una lista", "append", "añadir lista"
+        "How to", "add an item","to a list", "Example with append", "Appending","to a","list", "Como", "agregar", "un","elemento","a una lista", "append", "agregar","añadir lista"
       ],
       "responses": {
         "en": [
@@ -103,7 +101,7 @@
     {
       "tag": "list_remove",
       "patterns": [
-        "How to remove an item from a list", "Example with remove", "Removing items from a list in Python", "Cómo eliminar un elemento de una lista", "remove", "quitar lista"
+        "How", "to remove", "item", "from a list", "Example", "with"," remove", "Removing","items", "from","a list", "Como","eliminar", "un","elemento","de", "una ","lista", "remove", "quitar"
       ],
       "responses": {
         "en": [
@@ -117,7 +115,7 @@
     {
       "tag": "list_reverse_sort",
       "patterns": [
-        "How to sort a list in reverse order", "Sort list in reverse", "Reversed sorting in Python", "ordenar","lista ","reversa", "orden inverso"
+        "How" ,"to", "sort", "list","in","reverse", "order", "Reversed", "sorting", "ordenar","lista","reversa", "orden","inverso"
       ],
       "responses": {
         "en": [
@@ -129,29 +127,134 @@
       }
     },
     {
-      "tag": "algorithms",
+      "tag": "area_circle_request",
       "patterns": [
-        "How to implement an algorithm in Python", "Example of Python algorithm", "Generate code for gcd algorithm", "Cómo implementar un algoritmo", "Ejemplo de algoritmo", "algoritmo", "gcd"
+        "Generate", "code", "to", "calculate", "the", "area", "of a", "circle",
+        "Escribe", "un programa", "para", "calcular", "el", "area", "de un", "circulo"
       ],
       "responses": {
         "en": [
-          "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```",
-          "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```",
-          "Here’s Python code for a factorial algorithm:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
-          "Here's Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+          "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
         ],
         "es": [
-          "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n   while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```",
-          "Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```",
-          "Aquí tienes el código en Python para un algoritmo factorial:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```",
+          "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
+        ]
+      }
+    },
+    {
+      "tag": "factorial_request",
+      "patterns": [
+        "Generate", "code", "to", "calculate", "the", "factorial", "of a", "number",
+        "Escribe", "un programa", "para", "calcular", "el", "factorial", "de un", "numero"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+        ],
+        "es": [
+          "Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+        ]
+      }
+      
+    },
+    {
+      "tag": "fibonacci_request",
+      "patterns": [
+        "Generate", "code", "to", "calculate", "the", "Fibonacci", "sequence",
+        "Escribe", "un programa", "para", "calcular", "la", "secuencia", "de", "Fibonacci"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+        ],
+        "es": [
           "Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
         ]
       }
     },
     {
+      "tag": "bubble_sort_request",
+      "patterns": [
+        "Generate", "code", "for", "a", "bubble", "sort", "algorithm",
+        "Escribe", "un programa", "para", "un", "algoritmo", "de", "ordenamiento", "burbuja"
+      ],
+      "responses": {
+        "en": [
+          "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```"
+        ],
+        "es": [
+          "Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```"
+        ]
+      }
+    },
+    {
+      "tag": "gcd_request",
+      "patterns": [
+        "Generate", "code", "to", "calculate", "the", "greatest", "common", "divisor",
+        "Escribe", "un programa", "para", "calcular", "el", "maximo", "comun", "divisor"
+      ],
+      "responses": {
+        "en": [
+          "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```"
+        ],
+        "es": [
+          "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```"
+        ]
+      }
+    },
+    {
+      "tag": "if_tag",
+      "patterns": [
+        "How to use", "an", "if", "statement", "Example", "of an", "if", "statement", "Codigo", "para", "usar", "una", "sentencia", "if", "Ejemplo", "de una", "sentencia", "if", "Python if", "if examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use an if statement:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```",
+          "Here's an example of an if statement in Python:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```"
+        ],
+        "es": [
+          "Aquí está el código en Python para usar una sentencia if:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```",
+          "Aquí tienes un ejemplo de una sentencia if en Python:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```"
+        ]
+      }
+      
+    },
+    {
+      "tag": "else_tag",
+      "patterns": [
+        "How to use", "an", "else", "statement", "Example", "of an", "else", "statement", "Codigo", "para", "usar", "una", "sentencia", "else", "Ejemplo", "de una", "sentencia", "else", "Python else", "else examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use an else statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```",
+          "Here's an example of an else statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```"
+        ],
+        "es": [
+          "Aquí está el código en Python para usar una sentencia else:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```",
+          "Aquí tienes un ejemplo de una sentencia else en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```"
+        ]
+      }
+    },
+    {
+      "tag": "elif_tag",
+      "patterns": [
+        "How to use", "an", "elif", "statement", "Example", "of an", "elif", "statement", "Codigo", "para", "usar", "una", "sentencia", "elif", "Ejemplo", "de una", "sentencia", "elif", "Python elif", "elif examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use an elif statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```",
+          "Here's an example of an elif statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```"
+        ],
+        "es": [
+          "Aquí está el código en Python para usar una sentencia elif:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```",
+          "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
+        ]
+      }
+    }, 
+    {
       "tag": "help",
       "patterns": [
-        "Help", "Help me", "I need help", "Ayuda", "Ayúdame", "Necesito ayuda"
+        "Help", "Help me", "I need" ,"help", "Ayuda", "Ayudame", "Necesito"
       ],
       "responses": {
         "en": [
