@@ -20,7 +20,7 @@ translator = GoogleTranslator()
 model = None
 
 # Cargar datos
-intents_file = "intents3.json"  # Cambia esta ruta según corresponda
+intents_file = "intents4.json"  # Cambia esta ruta según corresponda
 model_file = "model.h5"       # Cambia esta ruta según corresponda
 
 with open(intents_file, 'r', encoding='utf-8') as content:
@@ -122,7 +122,12 @@ def responder(mensaje):
             response = respuesta
             
         """
+
         
+        
+        print(f"[DEBUG] Respuesta seleccionada: {response_options[idioma_detectado]}")
+        print(f"[DEBUG] response: {response_options}")
+        print(f"[DEBUG] tipo: " + str(type(response_options)))
         if detectar_lenguajes_js_python(mensaje) == 'python' and "python" in response_options[idioma_detectado]:
          print("Respuesta en Python")
          respuesta = response_options[idioma_detectado]["python"]
@@ -131,9 +136,11 @@ def responder(mensaje):
          print("Respuesta en JS")
          respuesta = response_options[idioma_detectado]["js"]
          response = random.choice(respuesta)
-        else:    
+        else:
+         print("Respuesta en otro lenguaje")    
          response = random.choice(response_options[idioma_detectado]) 
     else:
+        
         response = "Lo siento, no tengo una respuesta en tu idioma."
 
     return response

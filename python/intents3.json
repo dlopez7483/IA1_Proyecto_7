@@ -179,6 +179,131 @@
           "python": [
             "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```"
           ]
+<<<<<<< HEAD
+=======
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para agregar un elemento a un arreglo:\n```javascript\nlet miArray = [1, 2, 3];\nmiArray.push(4);\nconsole.log(miArray);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_remove",
+      "patterns": [
+        "remover", "remove", "Removing", "eliminar", "elemento", "remove", "quitar", "eliminar elemento de lista", "remove item from list"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
+          ],
+          "js": [
+            "Here's JavaScript code to remove an item from an array:\n```javascript\nlet myArray = [1, 2, 3, 4];\nlet index = myArray.indexOf(3);\nif (index > -1) {\n    myArray.splice(index, 1);\n}\nconsole.log(myArray);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
+          ],
+          "js": [
+            "Aquí tienes un código en JavaScript para eliminar un elemento de un arreglo:\n```javascript\nlet miArray = [1, 2, 3, 4];\nlet indice = miArray.indexOf(3);\nif (indice > -1) {\n    miArray.splice(indice, 1);\n}\nconsole.log(miArray);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_reverse_sort",
+      "patterns": [
+        "reverse sort", "orden inverso", "Reversed", "reversa", "inverso", "Reversed sorting", "inversamente"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to sort a list in reverse order:\n```javascript\nlet myList = [5, 3, 8, 6];\nmyList.sort((a, b) => b - a);\nconsole.log('Sorted list in reverse:', myList);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para ordenar una lista en orden inverso:\n```javascript\nlet miLista = [5, 3, 8, 6];\nmiLista.sort((a, b) => b - a);\nconsole.log('Lista ordenada en reversa:', miLista);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "area_circle_request",
+      "patterns": [
+        "area", "circle", "area of a circle",
+        "area", "circulo", "area de un circulo"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
+          ],
+          "js": [
+            "Here's the JavaScript code to calculate the area of a circle:\n```javascript\nfunction areaOfCircle(radius) {\n    return Math.PI * radius * radius;\n}\n\nconsole.log(areaOfCircle(5));```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para calcular el área de un círculo:\n```javascript\nfunction areaDeCirculo(radio) {\n    return Math.PI * radio * radio;\n}\n\nconsole.log(areaDeCirculo(5));```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "factorial_request",
+      "patterns": [
+         "factorial", "of a", "number","factorial of a number",
+          "factorial de un numero"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+          "js": ["Here's the JavaScript code to calculate the factorial of a number:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+       
+          
+        },
+        "es": {
+          "python": ["Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+          "js": ["Aquí está el código en JavaScript para calcular el factorial de un número:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+        }
+      }
+      
+    },
+    {
+      "tag": "fibonacci_request",
+      "patterns": [
+        "Fibonacci", "sequence", "Fibonacci sequence",
+        "secuencia", "secuencia Fibonacci"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
+          "js": ["Here's the js code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+        },
+        "es": {
+          "python": ["Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
+          "js": ["Aquí está el código en js para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+>>>>>>> ramas/201907483
         }
       }
     },
