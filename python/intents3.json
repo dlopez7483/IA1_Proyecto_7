@@ -164,7 +164,7 @@
         }
       },
       {
-        "tag": "factorial_request",
+        "tag": "factorial_request_python",
         "patterns": [
            "factorial", "of a", "number","factorial of a number",
             "factorial de un numero"
@@ -180,7 +180,7 @@
         
       },
       {
-        "tag": "fibonacci_request",
+        "tag": "fibonacci_request_python",
         "patterns": [
          "Fibonacci", "sequence", "Fibonacci sequence",
         "secuencia", "secuencia Fibonacci"
@@ -195,7 +195,7 @@
         }
       },
       {
-        "tag": "bubble_sort_request",
+        "tag": "bubble_sort_request_python",
         "patterns": [
            "bubble", "sort", "algorithm", "bubble sort algorithm",
            "algoritmo", "de", "ordenamiento", "burbuja", "algoritmo de ordenamiento burbuja"
@@ -210,7 +210,7 @@
         }
       },
       {
-        "tag": "gcd_request",
+        "tag": "gcd_request_python",
         "patterns": [
           "calculate gcd", "the", "greatest", "common divisor",
           "calcular maximo comun divisor", "maximo", "comun", "divisor"
@@ -225,7 +225,7 @@
         }
       },
       {
-        "tag": "if_tag",
+        "tag": "if_tag_python",
         "patterns": [
            "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "Python if", "if examples"
         ],
@@ -242,7 +242,7 @@
         
       },
       {
-        "tag": "else_tag",
+        "tag": "else_tag_python",
         "patterns": [
           "else", "else statement", "Ejemplo else", "Python else", "else examples"
         ],
@@ -258,7 +258,7 @@
         }
       },
       {
-        "tag": "elif_tag",
+        "tag": "elif_tag_python",
         "patterns": [
          "elif", "sentencia elif", "Ejemplo elif", "Python elif", "elif examples"
         ],
@@ -274,7 +274,7 @@
         }
       },
       {
-        "tag": "while_tag",
+        "tag": "while_tag_python",
         "patterns": [
            "while", "Ejemplo while", "bucle while", "Python while", "while examples"
         ],
@@ -290,7 +290,7 @@
         }
       },
       { 
-        "tag": "break_tag",
+        "tag": "break_tag_python",
         "patterns": [
          "break", "sentencia break", "Python break", "break examples"
         ],
