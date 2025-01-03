@@ -260,11 +260,11 @@
       "responses": {
         "en": {
           "python": ["Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
-          "js": ["Here's the JavaScript code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+          "js": ["Here's the js code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
         },
         "es": {
           "python": ["Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
-          "js": ["Aquí está el código en JavaScript para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+          "js": ["Aquí está el código en js para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
         }
       }
     },

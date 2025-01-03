@@ -122,18 +122,24 @@ def responder(mensaje):
             response = respuesta
             
         """
+
         
-        if detectar_lenguajes_js_python(mensaje) == 'python' and "python" in response_options[idioma_detectado]:
+        
+        print(f"[DEBUG] Respuesta seleccionada: {response_options[idioma_detectado]}")
+        print(f"[DEBUG] response: {response_options}")
+        if detectar_lenguajes_js_python(mensaje) == 'python' and "python" in response_options:
          print("Respuesta en Python")
          respuesta = response_options[idioma_detectado]["python"]
          response = random.choice(respuesta)
-        elif detectar_lenguajes_js_python(mensaje) == 'js' and "js" in response_options[idioma_detectado]:
+        elif detectar_lenguajes_js_python(mensaje) == 'js' and "js" in response_options:
          print("Respuesta en JS")
          respuesta = response_options[idioma_detectado]["js"]
          response = random.choice(respuesta)
-        else:    
+        else:
+         print("Respuesta en otro lenguaje")    
          response = random.choice(response_options[idioma_detectado]) 
     else:
+        
         response = "Lo siento, no tengo una respuesta en tu idioma."
 
     return response
