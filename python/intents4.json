@@ -1,0 +1,483 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Good day", "How are you", "Is anyone there?", "Hola", "Buenas", "Que tal"
+      ],
+      "responses": {
+        "en": [
+          "Hello, thanks for visiting",
+          "Good to see you again",
+          "Hi there, how can I help?"
+        ],
+        "es": [
+          "¡Hola!",
+          "¡Qué tal!",
+          "¿En qué puedo ayudarte?"
+        ]
+      }
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "Good day", "Adios", "Hasta luego", "Nos vemos"
+      ],
+      "responses": {
+        "en": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again"
+        ],
+        "es": [
+          "¡Adiós!",
+          "¡Hasta luego!",
+          "Nos vemos pronto"
+        ]
+      }
+    },
+    {
+      "tag": "dato_curioso_tag",
+      "patterns": [
+       "fun fact", "fun fact", "Dato", "curioso", "Cuentame", "dato", "interesante"
+      ],
+      "responses": {
+        "en": [
+          "Did you know that honey never spoils?",
+          "The Eiffel Tower can be 15 cm taller during the summer",
+          "The first oranges weren't orange",
+          "The shortest war in history lasted only 38 minutes"
+        ],
+        "es": [
+          "¿Sabías que la miel nunca se echa a perder?",
+          "La Torre Eiffel puede ser 15 cm más alta durante el verano",
+          "Las primeras naranjas no eran naranjas",
+          "La guerra más corta de la historia duró solo 38 minutos"
+        ]
+     
+      }
+    } 
+    ,
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "That's helpful", "Gracias", "Muy amable", "Te lo agradezco"
+      ],
+      "responses": {
+        "en": [
+          "Happy to help!",
+          "Any time!",
+          "My pleasure"
+        ],
+        "es": [
+          "¡Con gusto!",
+          "¡A cualquier hora!",
+          "¡Es un placer!"
+        ]
+      }
+    },
+    {
+      "tag": "forloop",
+      "patterns": [
+        "for loop", "for", "bucle for", "for loop", "loops"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use a for loop:\n```python\nfor i in range(5):\n    print(i)```",
+            "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use a for loop:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
+            "Here's the code for a for loop in JavaScript:\n```javascript\nfor (let i = 0; i < 10; i++) {\n    console.log(i);\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar un bucle for:\n```python\nfor i in range(5):\n    print(i)```",
+            "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar un bucle for:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
+            "Aquí tienes un ejemplo de un bucle for en JavaScript:\n```javascript\nfor (let i = 0; i < 10; i++) {\n    console.log(i);\n}```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_sort",
+      "patterns": [
+        "sort a list", "Sorting lists", "Sort list", "sorting", " sort list", "ordenar", "ordenar lista", "ordenada"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to sort a list:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Sorted list:', my_list)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to sort an array:\n```javascript\nlet myArray = [5, 3, 8, 6];\nmyArray.sort((a, b) => a - b);\nconsole.log('Sorted array:', myArray);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para ordenar una lista:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort()\nprint('Lista ordenada:', mi_lista)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para ordenar un arreglo:\n```javascript\nlet miArray = [5, 3, 8, 6];\nmiArray.sort((a, b) => a - b);\nconsole.log('Arreglo ordenado:', miArray);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_append",
+      "patterns": [
+        "add an item", "Example with append", "Appending", "agregar", "append", "agregar", "añadir lista", "agregar elemento a lista", "append item to list"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to add an item to an array:\n```javascript\nlet myArray = [1, 2, 3];\nmyArray.push(4);\nconsole.log(myArray);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para agregar un elemento a un arreglo:\n```javascript\nlet miArray = [1, 2, 3];\nmiArray.push(4);\nconsole.log(miArray);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_remove",
+      "patterns": [
+        "remover", "remove", "Removing", "eliminar", "elemento", "remove", "quitar", "eliminar elemento de lista", "remove item from list"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
+          ],
+          "js": [
+            "Here's JavaScript code to remove an item from an array:\n```javascript\nlet myArray = [1, 2, 3, 4];\nlet index = myArray.indexOf(3);\nif (index > -1) {\n    myArray.splice(index, 1);\n}\nconsole.log(myArray);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
+          ],
+          "js": [
+            "Aquí tienes un código en JavaScript para eliminar un elemento de un arreglo:\n```javascript\nlet miArray = [1, 2, 3, 4];\nlet indice = miArray.indexOf(3);\nif (indice > -1) {\n    miArray.splice(indice, 1);\n}\nconsole.log(miArray);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "list_reverse_sort",
+      "patterns": [
+        "reverse sort", "orden inverso", "Reversed", "reversa", "inverso", "Reversed sorting", "inversamente"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to sort a list in reverse order:\n```javascript\nlet myList = [5, 3, 8, 6];\nmyList.sort((a, b) => b - a);\nconsole.log('Sorted list in reverse:', myList);```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para ordenar una lista en orden inverso:\n```javascript\nlet miLista = [5, 3, 8, 6];\nmiLista.sort((a, b) => b - a);\nconsole.log('Lista ordenada en reversa:', miLista);```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "area_circle_request",
+      "patterns": [
+        "area", "circle", "area of a circle",
+        "area", "circulo", "area de un circulo"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
+          ],
+          "js": [
+            "Here's the JavaScript code to calculate the area of a circle:\n```javascript\nfunction areaOfCircle(radius) {\n    return Math.PI * radius * radius;\n}\n\nconsole.log(areaOfCircle(5));```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para calcular el área de un círculo:\n```javascript\nfunction areaDeCirculo(radio) {\n    return Math.PI * radio * radio;\n}\n\nconsole.log(areaDeCirculo(5));```"
+          ]
+        }
+      }
+    }
+    ,
+    {
+      "tag": "factorial_request",
+      "patterns": [
+         "factorial", "of a", "number","factorial of a number",
+          "factorial de un numero"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+          "js": ["Here's the JavaScript code to calculate the factorial of a number:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+       
+          
+        },
+        "es": {
+          "python": ["Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+          "js": ["Aquí está el código en JavaScript para calcular el factorial de un número:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+        }
+      }
+      
+    },
+    {
+      "tag": "fibonacci_request",
+      "patterns": [
+        "Fibonacci", "sequence", "Fibonacci sequence",
+        "secuencia", "secuencia Fibonacci"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
+          "js": ["Here's the js code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+        },
+        "es": {
+          "python": ["Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
+          "js": ["Aquí está el código en js para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
+        }
+      }
+    },
+    {
+      "tag": "bubble_sort_request",
+      "patterns": [
+        "bubble", "sort", "algorithm", "bubble sort algorithm",
+        "algoritmo", "de", "ordenamiento", "burbuja", "algoritmo de ordenamiento burbuja"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```"],
+          "js": ["Here's JavaScript code for a bubble sort algorithm:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Sorted array:', bubbleSort(arr));```"]
+        },
+        "es": {
+          "python": ["Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```"],
+          "js": ["Aquí tienes el código en JavaScript para un algoritmo de ordenamiento burbuja:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Arreglo ordenado:', bubbleSort(arr));```"]
+        }
+      },
+      "context_set": "bubble_sort_context"
+    }
+
+    ,
+    {
+      "tag": "gcd_request",
+      "patterns": [
+        "calculate gcd", "the", "greatest", "common divisor",
+        "calcular maximo comun divisor", "maximo", "comun", "divisor"
+      ],
+      "responses": {
+        "en": {
+          "python": ["Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```"],
+          "js": ["Here's JavaScript code to find the greatest common divisor (GCD):\n```javascript\nfunction gcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(gcd(48, 18));```"]
+        },
+        "es": {
+          "python": ["Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```"],
+          "js": ["Aquí está el código en JavaScript para calcular el máximo común divisor (MCD):\n```javascript\nfunction mcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(mcd(48, 18));```"]
+        }
+      }
+    },
+    {
+      "tag": "if_tag",
+      "patterns": [
+        "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "if examples"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use an if statement:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```",
+            "Here's an example of an if statement in Python:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use an if statement:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```",
+            "Here's an example of an if statement in JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar una sentencia if:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```",
+            "Aquí tienes un ejemplo de una sentencia if en Python:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar una sentencia if:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```",
+            "Aquí tienes un ejemplo de una sentencia if en JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```"
+          ]
+        }
+      }
+    }
+    
+    ,
+    {
+      "tag": "else_tag",
+      "patterns": [
+        "else", "else statement", "Ejemplo else", "Python else", "else examples"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use an else statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```",
+            "Here's an example of an else statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use an else statement:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```",
+            "Here's an example of an else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar una sentencia else:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```",
+            "Aquí tienes un ejemplo de una sentencia else en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar una sentencia else:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```",
+            "Aquí tienes un ejemplo de una sentencia else en JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```"
+          ]
+        }
+      }
+    }
+    
+    ,
+    {
+      "tag": "elif_tag",
+      "patterns": [
+        "elif", "sentencia elif", "Ejemplo elif", "Python elif", "elif examples"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use an elif statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```",
+            "Here's an example of an elif statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```",
+            "Here's an example of an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar una sentencia elif:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```",
+            "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```",
+            "Aquí tienes un ejemplo de una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```"
+          ]
+        }
+      }
+    }
+    
+    
+    ,
+    {
+      "tag": "while_tag",
+      "patterns": [
+        "while", "Ejemplo while", "bucle while", "Python while", "while examples"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use a while loop:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+            "Here's an example of a while loop in Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use a while loop:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+            "Here's an example of a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar un bucle while:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+            "Aquí tienes un ejemplo de un bucle while en Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar un bucle while:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+            "Aquí tienes un ejemplo de un bucle while en JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+          ]
+        }
+      }
+    }
+    
+    ,
+    {
+      "tag": "break_tag",
+      "patterns": [
+        "break", "sentencia break", "Python break", "break examples"
+      ],
+      "responses": {
+        "en": {
+          "python": [
+            "Here's the Python code to use a break statement:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+            "Here's an example of a break statement in Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+          ],
+          "js": [
+            "Here's the JavaScript code to use a break statement:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+            "Here's an example of a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+          ]
+        },
+        "es": {
+          "python": [
+            "Aquí está el código en Python para usar una sentencia break:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+            "Aquí tienes un ejemplo de una sentencia break en Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+          ],
+          "js": [
+            "Aquí está el código en JavaScript para usar una sentencia break:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+            "Aquí tienes un ejemplo de una sentencia break en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+          ]
+        }
+      }
+    }
+    ,
+
+
+
+
+
+    {
+      "tag": "help",
+      "patterns": [
+        "Help", "Help me", "I need" ,"help", "Ayuda", "Ayudame", "Necesito"
+      ],
+      "responses": {
+        "en": [
+          "Sure, I can help you. What do you need?",
+          "I'm here to help. What can I do for you?",
+          "How can I assist you?"
+        ],
+        "es": [
+          "Claro, puedo ayudarte. ¿Qué necesitas?",
+          "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
+          "¿Cómo puedo ayudarte?"
+        ]
+      }
+    }
+        
+  ]
+}     
