@@ -122,10 +122,13 @@ def responder(mensaje):
             response = respuesta
             
         """
-        if detectar_lenguajes_js_python(mensaje) == 'python':
+        
+        if detectar_lenguajes_js_python(mensaje) == 'python' and "python" in response_options[idioma_detectado]:
+         print("Respuesta en Python")
          respuesta = response_options[idioma_detectado]["python"]
          response = random.choice(respuesta)
-        elif detectar_lenguajes_js_python(mensaje) == 'js':
+        elif detectar_lenguajes_js_python(mensaje) == 'js' and "js" in response_options[idioma_detectado]:
+         print("Respuesta en JS")
          respuesta = response_options[idioma_detectado]["js"]
          response = random.choice(respuesta)
         else:    
