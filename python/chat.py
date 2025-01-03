@@ -8,7 +8,7 @@ from keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 from deep_translator import GoogleTranslator
 import pandas as pd
-
+import re # Importar la librería de expresiones regulares
 
 
 # Variables globales
@@ -67,6 +67,19 @@ def detectar_idioma(mensaje):
     except:
         return 'es'  # Por defecto, asumir español
 
+
+def detectar_lenguajes_js_python(mensaje):
+    # Expresión regular para detectar lenguajes de programación
+    pattern_python = r'python'
+    pattern_js = r'javascript|js'
+    if re.search(pattern_python, mensaje, re.IGNORECASE):
+     return 'python'
+    elif re.search(pattern_js, mensaje, re.IGNORECASE):
+     return 'js'
+
+
+
+
 def responder(mensaje):
     if not mensaje.strip():
         return "No entendí el mensaje, ¿puedes intentarlo de nuevo?"
@@ -74,6 +87,7 @@ def responder(mensaje):
     # Detectar el idioma del usuario
     idioma_detectado = detectar_idioma(mensaje)
     print(f"[DEBUG] Idioma detectado: {idioma_detectado}")
+    print (f"[DEBUG] Lenguaje detectado: {detectar_lenguajes_js_python(mensaje)}")
 
     # Preprocesar el mensaje
     mensaje_procesado = ''.join([ltrs.lower() for ltrs in mensaje if ltrs not in string.punctuation])
@@ -97,7 +111,25 @@ def responder(mensaje):
     # Seleccionar la respuesta en el idioma correcto
     response_options = responses.get(response_tag, {})
     if idioma_detectado in response_options:
-        response = random.choice(response_options[idioma_detectado])
+        """
+        respuesta = random.choice(response_options[idioma_detectado])
+        print(f"[DEBUG] Respuesta seleccionada: {respuesta.values()}")
+        if detectar_lenguajes_js_python(mensaje) == 'python' and "python" in respuesta:
+            response = respuesta["python"]
+        elif detectar_lenguajes_js_python(mensaje) == 'js' and "js" in respuesta:
+            response = respuesta["js"]
+        else:
+            response = respuesta
+            
+        """
+        if detectar_lenguajes_js_python(mensaje) == 'python':
+         respuesta = response_options[idioma_detectado]["python"]
+         response = random.choice(respuesta)
+        elif detectar_lenguajes_js_python(mensaje) == 'js':
+         respuesta = response_options[idioma_detectado]["js"]
+         response = random.choice(respuesta)
+        else:    
+         response = random.choice(response_options[idioma_detectado]) 
     else:
         response = "Lo siento, no tengo una respuesta en tu idioma."
 

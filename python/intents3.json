@@ -77,9 +77,9 @@
         }
       },
       {
-        "tag": "forloop_python",
+        "tag": "forloop",
         "patterns": [
-         "for loop" ,"for" ,"bucle for","for loop", "Python loops"
+         "for loop" ,"for" ,"bucle for","for loop", "loops"
         ],
         "responses": {
           "en": [
@@ -93,7 +93,7 @@
         }
       },
       {
-        "tag": "list_sort_python",
+        "tag": "list_sort",
         "patterns": [
          "sort a list", "Sorting lists", "Sort list", "sorting", " sort list","ordenar","ordenar lista","ordenada"
         ],
@@ -107,7 +107,7 @@
         }
       },
       {
-        "tag": "list_append_python",
+        "tag": "list_append",
         "patterns": [
          "add an item", "Example with append", "Appending", "agregar", "append", "agregar","añadir lista", "agregar elemento a lista", "append item to list"
         ],
@@ -121,7 +121,7 @@
         }
       },
       {
-        "tag": "list_remove_python",
+        "tag": "list_remove",
         "patterns": [
          "remover"," remove", "Removing","eliminar","elemento", "remove", "quitar", "eliminar elemento de lista", "remove item from list"
         ],
@@ -135,7 +135,7 @@
         }
       },
       {
-        "tag": "list_reverse_sort_python",
+        "tag": "list_reverse_sort",
         "patterns": [
           "reverse sort", "orden inverso", "Reversed","reversa","inverso", "Reversed sorting","inversamente"
         ],
@@ -149,7 +149,7 @@
         }
       },
       {
-        "tag": "area_circle_request_python",
+        "tag": "area_circle_request",
         "patterns": [
           "area", "circle", "area of a circle",
           "area", "circulo", "area de un circulo"
@@ -164,23 +164,27 @@
         }
       },
       {
-        "tag": "factorial_request_python",
+        "tag": "factorial_request",
         "patterns": [
            "factorial", "of a", "number","factorial of a number",
             "factorial de un numero"
         ],
         "responses": {
-          "en": [
-            "Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
-          ],
-          "es": [
-            "Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
-          ]
+          "en": {
+            "python": ["Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+            "js": ["Here's the JavaScript code to calculate the factorial of a number:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+         
+            
+          },
+          "es": {
+            "python": ["Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
+            "js": ["Aquí está el código en JavaScript para calcular el factorial de un número:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
+          }
         }
         
       },
       {
-        "tag": "fibonacci_request_python",
+        "tag": "fibonacci_request",
         "patterns": [
          "Fibonacci", "sequence", "Fibonacci sequence",
         "secuencia", "secuencia Fibonacci"
@@ -195,7 +199,7 @@
         }
       },
       {
-        "tag": "bubble_sort_request_python",
+        "tag": "bubble_sort_request",
         "patterns": [
            "bubble", "sort", "algorithm", "bubble sort algorithm",
            "algoritmo", "de", "ordenamiento", "burbuja", "algoritmo de ordenamiento burbuja"
@@ -210,7 +214,7 @@
         }
       },
       {
-        "tag": "gcd_request_python",
+        "tag": "gcd_request",
         "patterns": [
           "calculate gcd", "the", "greatest", "common divisor",
           "calcular maximo comun divisor", "maximo", "comun", "divisor"
@@ -225,9 +229,9 @@
         }
       },
       {
-        "tag": "if_tag_python",
+        "tag": "if_tag",
         "patterns": [
-           "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "Python if", "if examples"
+           "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "if examples"
         ],
         "responses": {
           "en": [
@@ -242,7 +246,7 @@
         
       },
       {
-        "tag": "else_tag_python",
+        "tag": "else_tag",
         "patterns": [
           "else", "else statement", "Ejemplo else", "Python else", "else examples"
         ],
@@ -258,7 +262,7 @@
         }
       },
       {
-        "tag": "elif_tag_python",
+        "tag": "elif_tag",
         "patterns": [
          "elif", "sentencia elif", "Ejemplo elif", "Python elif", "elif examples"
         ],
@@ -274,7 +278,7 @@
         }
       },
       {
-        "tag": "while_tag_python",
+        "tag": "while_tag",
         "patterns": [
            "while", "Ejemplo while", "bucle while", "Python while", "while examples"
         ],
@@ -290,7 +294,7 @@
         }
       },
       { 
-        "tag": "break_tag_python",
+        "tag": "break_tag",
         "patterns": [
          "break", "sentencia break", "Python break", "break examples"
         ],
@@ -305,6 +309,7 @@
           ]
         }
       },
+
   
   
   
