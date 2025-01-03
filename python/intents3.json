@@ -3,7 +3,14 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi", "Hello", "Good day", "How are you", "Is anyone there?", "Hola", "Buenas", "Que tal"
+        "Hi",
+        "Hello",
+        "Good day",
+        "How are you",
+        "Is anyone there?",
+        "Hola",
+        "Buenas",
+        "Que tal"
       ],
       "responses": {
         "en": [
@@ -21,7 +28,13 @@
     {
       "tag": "goodbye",
       "patterns": [
-        "Bye", "Goodbye", "See you later", "Good day", "Adios", "Hasta luego", "Nos vemos"
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Good day",
+        "Adios",
+        "Hasta luego",
+        "Nos vemos"
       ],
       "responses": {
         "en": [
@@ -39,7 +52,13 @@
     {
       "tag": "dato_curioso_tag",
       "patterns": [
-       "fun fact", "fun fact", "Dato", "curioso", "Cuentame", "dato", "interesante"
+        "fun fact",
+        "fun fact",
+        "Dato",
+        "curioso",
+        "Cuentame",
+        "dato",
+        "interesante"
       ],
       "responses": {
         "en": [
@@ -54,14 +73,17 @@
           "Las primeras naranjas no eran naranjas",
           "La guerra más corta de la historia duró solo 38 minutos"
         ]
-     
       }
-    } 
-    ,
+    },
     {
       "tag": "thanks",
       "patterns": [
-        "Thanks", "Thank you", "That's helpful", "Gracias", "Muy amable", "Te lo agradezco"
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Gracias",
+        "Muy amable",
+        "Te lo agradezco"
       ],
       "responses": {
         "en": [
@@ -79,7 +101,11 @@
     {
       "tag": "forloop",
       "patterns": [
-        "for loop", "for", "bucle for", "for loop", "loops"
+        "for loop",
+        "for",
+        "bucle for",
+        "for loop",
+        "loops"
       ],
       "responses": {
         "en": {
@@ -103,12 +129,18 @@
           ]
         }
       }
-    }
-    ,
+    },
     {
       "tag": "list_sort",
       "patterns": [
-        "sort a list", "Sorting lists", "Sort list", "sorting", " sort list", "ordenar", "ordenar lista", "ordenada"
+        "sort a list",
+        "Sorting lists",
+        "Sort list",
+        "sorting",
+        " sort list",
+        "ordenar",
+        "ordenar lista",
+        "ordenada"
       ],
       "responses": {
         "en": {
@@ -128,360 +160,466 @@
           ]
         }
       }
-    }
-    ,
+    },
     {
       "tag": "list_append",
       "patterns": [
-        "add an item", "Example with append", "Appending", "agregar", "append", "agregar", "añadir lista", "agregar elemento a lista", "append item to list"
+        "add an item",
+        "Example with append",
+        "Appending",
+        "agregar",
+        "append",
+        "agregar",
+        "añadir lista",
+        "agregar elemento a lista",
+        "append item to list"
       ],
       "responses": {
         "en": {
           "python": [
             "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```"
-          ],
-          "js": [
-            "Here's the JavaScript code to add an item to an array:\n```javascript\nlet myArray = [1, 2, 3];\nmyArray.push(4);\nconsole.log(myArray);```"
           ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para agregar un elemento a un arreglo:\n```javascript\nlet miArray = [1, 2, 3];\nmiArray.push(4);\nconsole.log(miArray);```"
-          ]
-        }
-      }
-    }
-    ,
-    {
-      "tag": "list_remove",
-      "patterns": [
-        "remover", "remove", "Removing", "eliminar", "elemento", "remove", "quitar", "eliminar elemento de lista", "remove item from list"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
-          ],
-          "js": [
-            "Here's JavaScript code to remove an item from an array:\n```javascript\nlet myArray = [1, 2, 3, 4];\nlet index = myArray.indexOf(3);\nif (index > -1) {\n    myArray.splice(index, 1);\n}\nconsole.log(myArray);```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
-          ],
-          "js": [
-            "Aquí tienes un código en JavaScript para eliminar un elemento de un arreglo:\n```javascript\nlet miArray = [1, 2, 3, 4];\nlet indice = miArray.indexOf(3);\nif (indice > -1) {\n    miArray.splice(indice, 1);\n}\nconsole.log(miArray);```"
-          ]
-        }
-      }
-    }
-    ,
-    {
-      "tag": "list_reverse_sort",
-      "patterns": [
-        "reverse sort", "orden inverso", "Reversed", "reversa", "inverso", "Reversed sorting", "inversamente"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
-          ],
-          "js": [
-            "Here's the JavaScript code to sort a list in reverse order:\n```javascript\nlet myList = [5, 3, 8, 6];\nmyList.sort((a, b) => b - a);\nconsole.log('Sorted list in reverse:', myList);```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para ordenar una lista en orden inverso:\n```javascript\nlet miLista = [5, 3, 8, 6];\nmiLista.sort((a, b) => b - a);\nconsole.log('Lista ordenada en reversa:', miLista);```"
-          ]
-        }
-      }
-    }
-    ,
-    {
-      "tag": "area_circle_request",
-      "patterns": [
-        "area", "circle", "area of a circle",
-        "area", "circulo", "area de un circulo"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
-          ],
-          "js": [
-            "Here's the JavaScript code to calculate the area of a circle:\n```javascript\nfunction areaOfCircle(radius) {\n    return Math.PI * radius * radius;\n}\n\nconsole.log(areaOfCircle(5));```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para calcular el área de un círculo:\n```javascript\nfunction areaDeCirculo(radio) {\n    return Math.PI * radio * radio;\n}\n\nconsole.log(areaDeCirculo(5));```"
-          ]
-        }
-      }
-    }
-    ,
-    {
-      "tag": "factorial_request",
-      "patterns": [
-         "factorial", "of a", "number","factorial of a number",
-          "factorial de un numero"
-      ],
-      "responses": {
-        "en": {
-          "python": ["Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
-          "js": ["Here's the JavaScript code to calculate the factorial of a number:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
-       
-          
-        },
-        "es": {
-          "python": ["Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"],
-          "js": ["Aquí está el código en JavaScript para calcular el factorial de un número:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"]
-        }
-      }
-      
-    },
-    {
-      "tag": "fibonacci_request",
-      "patterns": [
-        "Fibonacci", "sequence", "Fibonacci sequence",
-        "secuencia", "secuencia Fibonacci"
-      ],
-      "responses": {
-        "en": {
-          "python": ["Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
-          "js": ["Here's the JavaScript code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
-        },
-        "es": {
-          "python": ["Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"],
-          "js": ["Aquí está el código en JavaScript para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"]
         }
       }
     },
-    {
-      "tag": "bubble_sort_request",
-      "patterns": [
-        "bubble", "sort", "algorithm", "bubble sort algorithm",
-        "algoritmo", "de", "ordenamiento", "burbuja", "algoritmo de ordenamiento burbuja"
-      ],
-      "responses": {
-        "en": {
-          "python": ["Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```"],
-          "js": ["Here's JavaScript code for a bubble sort algorithm:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Sorted array:', bubbleSort(arr));```"]
-        },
-        "es": {
-          "python": ["Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```"],
-          "js": ["Aquí tienes el código en JavaScript para un algoritmo de ordenamiento burbuja:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Arreglo ordenado:', bubbleSort(arr));```"]
+        {
+          "tag": "dato_curioso_tag",
+          "patterns": [
+            "fun fact",
+            "fun fact",
+            "Dato",
+            "curioso",
+            "Cuentame",
+            "dato",
+            "interesante",
+            "datos",
+            "curiosos"
+          ],
+          "responses": {
+            "en": [
+              "Did you know that honey never spoils?",
+              "The Eiffel Tower can be 15 cm taller during the summer",
+              "The first oranges weren't orange",
+              "The shortest war in history lasted only 38 minutes"
+            ],
+            "js": [
+              "Here's the JavaScript code to add an item to an array:\n```javascript\nlet myArray = [1, 2, 3];\nmyArray.push(4);\nconsole.log(myArray);```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para agregar un elemento a un arreglo:\n```javascript\nlet miArray = [1, 2, 3];\nmiArray.push(4);\nconsole.log(miArray);```"
+            ]
+          }
+        }
+      ,
+      {
+        "tag": "list_remove",
+        "patterns": [
+          "remover",
+          "remove",
+          "Removing",
+          "eliminar",
+          "elemento",
+          "remove",
+          "quitar",
+          "eliminar elemento de lista",
+          "remove item from list"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
+            ],
+            "js": [
+              "Here's JavaScript code to remove an item from an array:\n```javascript\nlet myArray = [1, 2, 3, 4];\nlet index = myArray.indexOf(3);\nif (index > -1) {\n    myArray.splice(index, 1);\n}\nconsole.log(myArray);```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
+            ],
+            "js": [
+              "Aquí tienes un código en JavaScript para eliminar un elemento de un arreglo:\n```javascript\nlet miArray = [1, 2, 3, 4];\nlet indice = miArray.indexOf(3);\nif (indice > -1) {\n    miArray.splice(indice, 1);\n}\nconsole.log(miArray);```"
+            ]
+          }
         }
       },
-      "context_set": "bubble_sort_context"
-    }
-
-    ,
-    {
-      "tag": "gcd_request",
-      "patterns": [
-        "calculate gcd", "the", "greatest", "common divisor",
-        "calcular maximo comun divisor", "maximo", "comun", "divisor"
-      ],
-      "responses": {
-        "en": {
-          "python": ["Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```"],
-          "js": ["Here's JavaScript code to find the greatest common divisor (GCD):\n```javascript\nfunction gcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(gcd(48, 18));```"]
-        },
-        "es": {
-          "python": ["Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```"],
-          "js": ["Aquí está el código en JavaScript para calcular el máximo común divisor (MCD):\n```javascript\nfunction mcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(mcd(48, 18));```"]
-        }
-      }
-    },
-    {
-      "tag": "if_tag",
-      "patterns": [
-        "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "if examples"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to use an if statement:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```",
-            "Here's an example of an if statement in Python:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```"
-          ],
-          "js": [
-            "Here's the JavaScript code to use an if statement:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```",
-            "Here's an example of an if statement in JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para usar una sentencia if:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```",
-            "Aquí tienes un ejemplo de una sentencia if en Python:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para usar una sentencia if:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```",
-            "Aquí tienes un ejemplo de una sentencia if en JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```"
-          ]
-        }
-      }
-    }
-    
-    ,
-    {
-      "tag": "else_tag",
-      "patterns": [
-        "else", "else statement", "Ejemplo else", "Python else", "else examples"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to use an else statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```",
-            "Here's an example of an else statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```"
-          ],
-          "js": [
-            "Here's the JavaScript code to use an else statement:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```",
-            "Here's an example of an else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para usar una sentencia else:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```",
-            "Aquí tienes un ejemplo de una sentencia else en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para usar una sentencia else:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```",
-            "Aquí tienes un ejemplo de una sentencia else en JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```"
-          ]
-        }
-      }
-    }
-    
-    ,
-    {
-      "tag": "elif_tag",
-      "patterns": [
-        "elif", "sentencia elif", "Ejemplo elif", "Python elif", "elif examples"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to use an elif statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```",
-            "Here's an example of an elif statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```"
-          ],
-          "js": [
-            "Here's the JavaScript code to use an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```",
-            "Here's an example of an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para usar una sentencia elif:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```",
-            "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para usar una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```",
-            "Aquí tienes un ejemplo de una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```"
-          ]
-        }
-      }
-    }
-    
-    
-    ,
-    {
-      "tag": "while_tag",
-      "patterns": [
-        "while", "Ejemplo while", "bucle while", "Python while", "while examples"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to use a while loop:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
-            "Here's an example of a while loop in Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
-          ],
-          "js": [
-            "Here's the JavaScript code to use a while loop:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
-            "Here's an example of a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para usar un bucle while:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
-            "Aquí tienes un ejemplo de un bucle while en Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para usar un bucle while:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
-            "Aquí tienes un ejemplo de un bucle while en JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
-          ]
-        }
-      }
-    }
-    
-    ,
-    {
-      "tag": "break_tag",
-      "patterns": [
-        "break", "sentencia break", "Python break", "break examples"
-      ],
-      "responses": {
-        "en": {
-          "python": [
-            "Here's the Python code to use a break statement:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
-            "Here's an example of a break statement in Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
-          ],
-          "js": [
-            "Here's the JavaScript code to use a break statement:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
-            "Here's an example of a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
-          ]
-        },
-        "es": {
-          "python": [
-            "Aquí está el código en Python para usar una sentencia break:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
-            "Aquí tienes un ejemplo de una sentencia break en Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
-          ],
-          "js": [
-            "Aquí está el código en JavaScript para usar una sentencia break:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
-            "Aquí tienes un ejemplo de una sentencia break en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
-          ]
-        }
-      }
-    }
-    ,
-
-
-
-
-
-    {
-      "tag": "help",
-      "patterns": [
-        "Help", "Help me", "I need" ,"help", "Ayuda", "Ayudame", "Necesito"
-      ],
-      "responses": {
-        "en": [
-          "Sure, I can help you. What do you need?",
-          "I'm here to help. What can I do for you?",
-          "How can I assist you?"
+      {
+        "tag": "list_reverse_sort",
+        "patterns": [
+          "reverse sort",
+          "orden inverso",
+          "Reversed",
+          "reversa",
+          "inverso",
+          "Reversed sorting",
+          "inversamente"
         ],
-        "es": [
-          "Claro, puedo ayudarte. ¿Qué necesitas?",
-          "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
-          "¿Cómo puedo ayudarte?"
-        ]
-      }
-    },
+        "responses": {
+          "en": {
+            "python": [
+              "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
+            ],
+            "js": [
+              "Here's the JavaScript code to sort a list in reverse order:\n```javascript\nlet myList = [5, 3, 8, 6];\nmyList.sort((a, b) => b - a);\nconsole.log('Sorted list in reverse:', myList);```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para ordenar una lista en orden inverso:\n```javascript\nlet miLista = [5, 3, 8, 6];\nmiLista.sort((a, b) => b - a);\nconsole.log('Lista ordenada en reversa:', miLista);```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "area_circle_request",
+        "patterns": [
+          "area",
+          "circle",
+          "area of a circle",
+          "area",
+          "circulo",
+          "area de un circulo"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
+            ],
+            "js": [
+              "Here's the JavaScript code to calculate the area of a circle:\n```javascript\nfunction areaOfCircle(radius) {\n    return Math.PI * radius * radius;\n}\n\nconsole.log(areaOfCircle(5));```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para calcular el área de un círculo:\n```javascript\nfunction areaDeCirculo(radio) {\n    return Math.PI * radio * radio;\n}\n\nconsole.log(areaDeCirculo(5));```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "factorial_request",
+        "patterns": [
+          "factorial",
+          "of a",
+          "number",
+          "factorial of a number",
+          "factorial de un numero"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+            ],
+            "js": [
+              "Here's the JavaScript code to calculate the factorial of a number:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para calcular el factorial de un número:\n```javascript\nfunction factorial(n) {\n    if (n === 0) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\n\nconsole.log(factorial(5));```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "fibonacci_request",
+        "patterns": [
+          "Fibonacci",
+          "sequence",
+          "Fibonacci sequence",
+          "secuencia",
+          "secuencia Fibonacci"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+            ],
+            "js": [
+              "Here's the JavaScript code to find the Fibonacci sequence:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para encontrar la secuencia de Fibonacci:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nfor (let i = 0; i < 10; i++) {\n    console.log(fibonacci(i));\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "bubble_sort_request",
+        "patterns": [
+          "bubble",
+          "sort",
+          "algorithm",
+          "bubble sort algorithm",
+          "algoritmo",
+          "de",
+          "ordenamiento",
+          "burbuja",
+          "algoritmo de ordenamiento burbuja"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```"
+            ],
+            "js": [
+              "Here's JavaScript code for a bubble sort algorithm:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Sorted array:', bubbleSort(arr));```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```"
+            ],
+            "js": [
+              "Aquí tienes el código en JavaScript para un algoritmo de ordenamiento burbuja:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                let temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n    return arr;\n}\n\nlet arr = [64, 34, 25, 12, 22, 11, 90];\nconsole.log('Arreglo ordenado:', bubbleSort(arr));```"
+            ]
+          }
+        },
+        "context_set": "bubble_sort_context"
+      },
+      {
+        "tag": "gcd_request",
+        "patterns": [
+          "calculate gcd",
+          "the",
+          "greatest",
+          "common divisor",
+          "calcular maximo comun divisor",
+          "maximo",
+          "comun",
+          "divisor"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```"
+            ],
+            "js": [
+              "Here's JavaScript code to find the greatest common divisor (GCD):\n```javascript\nfunction gcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(gcd(48, 18));```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para calcular el máximo común divisor (MCD):\n```javascript\nfunction mcd(a, b) {\n    while (b !== 0) {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nconsole.log(mcd(48, 18));```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "if_tag",
+        "patterns": [
+          "Codigo if",
+          "if statement",
+          "sentencia if",
+          "if",
+          "Ejemplo if",
+          "if",
+          "if examples"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to use an if statement:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```",
+              "Here's an example of an if statement in Python:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```"
+            ],
+            "js": [
+              "Here's the JavaScript code to use an if statement:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```",
+              "Here's an example of an if statement in JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x is greater than 5');\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para usar una sentencia if:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```",
+              "Aquí tienes un ejemplo de una sentencia if en Python:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para usar una sentencia if:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```",
+              "Aquí tienes un ejemplo de una sentencia if en JavaScript:\n```javascript\nlet x = 10;\nif (x > 5) {\n    console.log('x es mayor que 5');\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "else_tag",
+        "patterns": [
+          "else",
+          "else statement",
+          "Ejemplo else",
+          "Python else",
+          "else examples"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to use an else statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```",
+              "Here's an example of an else statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```"
+            ],
+            "js": [
+              "Here's the JavaScript code to use an else statement:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```",
+              "Here's an example of an else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para usar una sentencia else:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```",
+              "Aquí tienes un ejemplo de una sentencia else en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para usar una sentencia else:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```",
+              "Aquí tienes un ejemplo de una sentencia else en JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "elif_tag",
+        "patterns": [
+          "elif",
+          "sentencia elif",
+          "Ejemplo elif",
+          "Python elif",
+          "elif examples"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to use an elif statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```",
+              "Here's an example of an elif statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```"
+            ],
+            "js": [
+              "Here's the JavaScript code to use an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```",
+              "Here's an example of an elif statement (else if in JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else if (x === 5) {\n    console.log('x is equal to 5');\n} else {\n    console.log('x is less than 5');\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para usar una sentencia elif:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```",
+              "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para usar una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```",
+              "Aquí tienes un ejemplo de una sentencia elif (else if en JavaScript):\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else if (x === 5) {\n    console.log('x es igual a 5');\n} else {\n    console.log('x es menor que 5');\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "while_tag",
+        "patterns": [
+          "while",
+          "Ejemplo while",
+          "bucle while",
+          "Python while",
+          "while examples"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to use a while loop:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+              "Here's an example of a while loop in Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+            ],
+            "js": [
+              "Here's the JavaScript code to use a while loop:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+              "Here's an example of a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para usar un bucle while:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+              "Aquí tienes un ejemplo de un bucle while en Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para usar un bucle while:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+              "Aquí tienes un ejemplo de un bucle while en JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "break_tag",
+        "patterns": [
+          "break",
+          "sentencia break",
+          "Python break",
+          "break examples"
+        ],
+        "responses": {
+          "en": {
+            "python": [
+              "Here's the Python code to use a break statement:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+              "Here's an example of a break statement in Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+            ],
+            "js": [
+              "Here's the JavaScript code to use a break statement:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+              "Here's an example of a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+            ]
+          },
+          "es": {
+            "python": [
+              "Aquí está el código en Python para usar una sentencia break:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+              "Aquí tienes un ejemplo de una sentencia break en Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+            ],
+            "js": [
+              "Aquí está el código en JavaScript para usar una sentencia break:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+              "Aquí tienes un ejemplo de una sentencia break en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+            ]
+          }
+        }
+      },
+      {
+        "tag": "help",
+        "patterns": [
+          "Help",
+          "Help me",
+          "I need",
+          "help",
+          "Ayuda",
+          "Ayudame",
+          "Necesito"
+        ],
+        "responses": {
+          "en": [
+            "Sure, I can help you. What do you need?",
+            "I'm here to help. What can I do for you?",
+            "How can I assist you?"
+          ],
+          "es": [
+            "Claro, puedo ayudarte. ¿Qué necesitas?",
+            "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
+            "¿Cómo puedo ayudarte?"
+          ]
+        }
+      },
       {
         "tag": "if_else_js",
         "patterns": [
-          "if else", "if else statement", "Ejemplo if else", "JavaScript if else", "if else examples"
+          "if else",
+          "if else statement",
+          "Ejemplo if else",
+          "JavaScript if else",
+          "if else examples"
         ],
         "responses": {
           "en": [
@@ -497,7 +635,11 @@
       {
         "tag": "for_loop_js",
         "patterns": [
-          "for loop", "Ejemplo for loop", "JavaScript for loop", "bucle for", "for loop examples"
+          "for loop",
+          "Ejemplo for loop",
+          "JavaScript for loop",
+          "bucle for",
+          "for loop examples"
         ],
         "responses": {
           "en": [
@@ -513,7 +655,11 @@
       {
         "tag": "while_loop_js",
         "patterns": [
-          "while loop", "Ejemplo while loop", "JavaScript while", "bucle while", "while examples"
+          "while loop",
+          "Ejemplo while loop",
+          "JavaScript while",
+          "bucle while",
+          "while examples"
         ],
         "responses": {
           "en": [
@@ -529,7 +675,10 @@
       {
         "tag": "break_statement_js",
         "patterns": [
-          "break statement", "sentencia break", "JavaScript break", "break examples"
+          "break statement",
+          "sentencia break",
+          "JavaScript break",
+          "break examples"
         ],
         "responses": {
           "en": [
@@ -545,7 +694,10 @@
       {
         "tag": "continue_statement_js",
         "patterns": [
-          "continue statement", "sentencia continue", "JavaScript continue", "continue examples"
+          "continue statement",
+          "sentencia continue",
+          "JavaScript continue",
+          "continue examples"
         ],
         "responses": {
           "en": [
@@ -558,401 +710,1045 @@
           ]
         }
       },
-        {
-          "tag": "function_js",
-          "patterns": [
-            "function", "Ejemplo de función", "JavaScript function", "function examples"
-          ],
-          "responses": {
-            "en": [
-              "Here's an example of a function in JavaScript:\n```javascript\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\nconsole.log(greet('John'));\n```",
-              "Here's how to define a function in JavaScript:\n```javascript\nfunction sum(a, b) {\n    return a + b;\n}\nconsole.log(sum(5, 3)); // Output: 8\n```"
-            ],
-            "es": [
-              "Aquí tienes un ejemplo de una función en JavaScript:\n```javascript\nfunction greet(name) {\n    return `¡Hola, ${name}!`;\n}\nconsole.log(greet('Juan'));\n```",
-              "Aquí está cómo definir una función en JavaScript:\n```javascript\nfunction suma(a, b) {\n    return a + b;\n}\nconsole.log(suma(5, 3)); // Salida: 8\n```"
-            ]
-          }
-        },
-        {
-          "tag": "arrow_function_js",
-          "patterns": [
-            "arrow function", "función flecha", "JavaScript arrow function", "arrow function examples"
-          ],
-          "responses": {
-            "en": [
-              "Here's an example of an arrow function in JavaScript:\n```javascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));\n```",
-              "Arrow functions are a concise way to define functions in JavaScript:\n```javascript\nconst sum = (a, b) => a + b;\nconsole.log(sum(5, 3)); // Output: 8\n```"
-            ],
-            "es": [
-              "Aquí tienes un ejemplo de una función flecha en JavaScript:\n```javascript\nconst greet = (name) => `¡Hola, ${name}!`;\nconsole.log(greet('Juan'));\n```",
-              "Las funciones flecha son una forma concisa de definir funciones en JavaScript:\n```javascript\nconst suma = (a, b) => a + b;\nconsole.log(suma(5, 3)); // Salida: 8\n```"
-            ]
-          }
-        },
-        {
-          "tag": "array_methods_js",
-          "patterns": [
-            "array methods", "métodos de array", "JavaScript array methods", "array examples"
-          ],
-          "responses": {
-            "en": [
-              "Here's an example of using array methods in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); // Output: [2, 4, 6, 8, 10]\n```",
-              "Another example of an array method in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filtered = numbers.filter(num => num > 3);\nconsole.log(filtered); // Output: [4, 5]\n```"
-            ],
-            "es": [
-              "Aquí tienes un ejemplo de cómo usar métodos de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst duplicados = numeros.map(num => num * 2);\nconsole.log(duplicados); // Salida: [2, 4, 6, 8, 10]\n```",
-              "Otro ejemplo de un método de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst filtrados = numeros.filter(num => num > 3);\nconsole.log(filtrados); // Salida: [4, 5]\n```"
-            ]
-          }
-        },
-        {
-          "tag": "promise_js",
-          "patterns": [
-            "promise", "promesa", "JavaScript promise", "promise examples"
-          ],
-          "responses": {
-            "en": [
-              "Here's how to use a promise in JavaScript:\n```javascript\nconst myPromise = new Promise((resolve, reject) => {\n    const success = true;\n    if (success) {\n        resolve('Operation was successful');\n    } else {\n        reject('Operation failed');\n    }\n});\nmyPromise\n    .then(result => console.log(result))\n    .catch(error => console.log(error));\n```",
-              "Promises allow you to handle asynchronous operations. Example:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
-            ],
-            "es": [
-              "Aquí tienes cómo usar una promesa en JavaScript:\n```javascript\nconst miPromesa = new Promise((resolve, reject) => {\n    const exito = true;\n    if (exito) {\n        resolve('La operación fue exitosa');\n    } else {\n        reject('La operación falló');\n    }\n});\nmiPromesa\n    .then(resultado => console.log(resultado))\n    .catch(error => console.log(error));\n```",
-              "Las promesas te permiten manejar operaciones asíncronas. Ejemplo:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
-            ]
-          }
-        },
-        {
-          "tag": "async_await_js",
-          "patterns": [
-            "async await", "JavaScript async", "async await examples", "Ejemplo async await"
-          ],
-          "responses": {
-            "en": [
-              "Here's how to use async/await in JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
-              "Async/await makes asynchronous code easier to read. Example:\n```javascript\nconst delay = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Wait for 2 seconds');\n    await delay(2000);\n    console.log('Done waiting!');\n};\nmain();\n```"
-            ],
-            "es": [
-              "Aquí tienes cómo usar async/await en JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
-              "Async/await hace que el código asíncrono sea más fácil de leer. Ejemplo:\n```javascript\nconst retraso = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Espera 2 segundos');\n    await retraso(2000);\n    console.log('¡Espera terminada!');\n};\nmain();\n```"
-            ]
-          }
-        },
-          {
-            "tag": "factorial_function_js",
-            "patterns": [
-              "factorial", "función factorial", "JavaScript factorial", "factorial examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's how to calculate the factorial of a number in JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Output: 120\n```",
-                "This is an example of a recursive factorial function in JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Output: 24\n```"
-              ],
-              "es": [
-                "Aquí tienes cómo calcular el factorial de un número en JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Salida: 120\n```",
-                "Este es un ejemplo de una función recursiva para calcular el factorial en JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Salida: 24\n```"
-              ]
-            }
-          },
-          {
-            "tag": "bubble_sort_js",
-            "patterns": [
-              "bubble sort", "ordenamiento burbuja", "JavaScript bubble sort", "bubble sort examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's how to implement bubble sort in JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]\n```",
-                "This is an example of bubble sort in JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Output: [2, 4, 5, 7]\n```"
-              ],
-              "es": [
-                "Aquí tienes cómo implementar el ordenamiento burbuja en JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Salida: [2, 3, 4, 5, 8]\n```",
-                "Este es un ejemplo del ordenamiento burbuja en JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Salida: [2, 4, 5, 7]\n```"
-              ]
-            }
-          },
-          {
-            "tag": "recursive_function_js",
-            "patterns": [
-              "recursive function", "función recursiva", "JavaScript recursion", "recursion examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's an example of a recursive function in JavaScript:\n```javascript\nfunction sumTo(n) {\n    if (n === 0) return 0;\n    return n + sumTo(n - 1);\n}\nconsole.log(sumTo(5)); // Output: 15\n```",
-                "Recursive functions are useful for repetitive tasks. Example:\n```javascript\nconst reverseString = str => {\n    if (str === '') return '';\n    return reverseString(str.substr(1)) + str[0];\n};\nconsole.log(reverseString('hello')); // Output: 'olleh'\n```"
-              ],
-              "es": [
-                "Aquí tienes un ejemplo de una función recursiva en JavaScript:\n```javascript\nfunction sumaHasta(n) {\n    if (n === 0) return 0;\n    return n + sumaHasta(n - 1);\n}\nconsole.log(sumaHasta(5)); // Salida: 15\n```",
-                "Las funciones recursivas son útiles para tareas repetitivas. Ejemplo:\n```javascript\nconst reversaCadena = str => {\n    if (str === '') return '';\n    return reversaCadena(str.substr(1)) + str[0];\n};\nconsole.log(reversaCadena('hola')); // Salida: 'aloh'\n```"
-              ]
-            }
-          },
-          {
-            "tag": "fibonacci_js",
-            "patterns": [
-              "fibonacci", "fibonacci series", "JavaScript fibonacci", "fibonacci examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's how to calculate the Fibonacci series in JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Output: 8\n```",
-                "This is an iterative approach to Fibonacci in JavaScript:\n```javascript\nfunction fibonacciIterative(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterative(6)); // Output: 8\n```"
-              ],
-              "es": [
-                "Aquí tienes cómo calcular la serie de Fibonacci en JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Salida: 8\n```",
-                "Este es un enfoque iterativo para Fibonacci en JavaScript:\n```javascript\nfunction fibonacciIterativo(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterativo(6)); // Salida: 8\n```"
-              ]
-            }
-          }
-        }
-      }
-      ,
-
-  
-  
-  
-  
       {
-        "tag": "help",
+        "tag": "function_js",
         "patterns": [
-          "Help", "Help me", "I need" ,"help", "Ayuda", "Ayudame", "Necesito"
+          "function",
+          "Ejemplo de función",
+          "JavaScript function",
+          "function examples"
         ],
         "responses": {
           "en": [
-            "Sure, I can help you. What do you need?",
-            "I'm here to help. What can I do for you?",
-            "How can I assist you?"
+            "Here's an example of a function in JavaScript:\n```javascript\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\nconsole.log(greet('John'));\n```",
+            "Here's how to define a function in JavaScript:\n```javascript\nfunction sum(a, b) {\n    return a + b;\n}\nconsole.log(sum(5, 3)); // Output: 8\n```"
           ],
           "es": [
-            "Claro, puedo ayudarte. ¿Qué necesitas?",
-            "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
-            "¿Cómo puedo ayudarte?"
+            "Aquí tienes un ejemplo de una función en JavaScript:\n```javascript\nfunction greet(name) {\n    return `¡Hola, ${name}!`;\n}\nconsole.log(greet('Juan'));\n```",
+            "Aquí está cómo definir una función en JavaScript:\n```javascript\nfunction suma(a, b) {\n    return a + b;\n}\nconsole.log(suma(5, 3)); // Salida: 8\n```"
           ]
         }
       },
-        {
-          "tag": "if_else_js",
-          "patterns": [
-            "if else", "if else statement", "Ejemplo if else", "JavaScript if else", "if else examples"
+      {
+        "tag": "arrow_function_js",
+        "patterns": [
+          "arrow function",
+          "función flecha",
+          "JavaScript arrow function",
+          "arrow function examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's an example of an arrow function in JavaScript:\n```javascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));\n```",
+            "Arrow functions are a concise way to define functions in JavaScript:\n```javascript\nconst sum = (a, b) => a + b;\nconsole.log(sum(5, 3)); // Output: 8\n```"
           ],
-          "responses": {
-            "en": [
-              "Here's how to use an if-else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```",
-              "Here's an example of an if-else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```"
-            ],
-            "es": [
-              "Aquí está el código en JavaScript para usar una sentencia if-else:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```",
-              "Aquí tienes un ejemplo de una sentencia if-else en JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```"
-            ]
-          }
-        },
-        {
-          "tag": "for_loop_js",
-          "patterns": [
-            "for loop", "Ejemplo for loop", "JavaScript for loop", "bucle for", "for loop examples"
+          "es": [
+            "Aquí tienes un ejemplo de una función flecha en JavaScript:\n```javascript\nconst greet = (name) => `¡Hola, ${name}!`;\nconsole.log(greet('Juan'));\n```",
+            "Las funciones flecha son una forma concisa de definir funciones en JavaScript:\n```javascript\nconst suma = (a, b) => a + b;\nconsole.log(suma(5, 3)); // Salida: 8\n```"
+          ]
+        }
+      },
+      {
+        "tag": "array_methods_js",
+        "patterns": [
+          "array methods",
+          "métodos de array",
+          "JavaScript array methods",
+          "array examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's an example of using array methods in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); // Output: [2, 4, 6, 8, 10]\n```",
+            "Another example of an array method in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filtered = numbers.filter(num => num > 3);\nconsole.log(filtered); // Output: [4, 5]\n```"
           ],
-          "responses": {
-            "en": [
-              "Here's how to use a for loop in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
-              "Here's an example of a for loop in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```"
-            ],
-            "es": [
-              "Aquí está el código en JavaScript para usar un bucle for:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
-              "Aquí tienes un ejemplo de un bucle for en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```"
-            ]
-          }
-        },
-        {
-          "tag": "while_loop_js",
-          "patterns": [
-            "while loop", "Ejemplo while loop", "JavaScript while", "bucle while", "while examples"
+          "es": [
+            "Aquí tienes un ejemplo de cómo usar métodos de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst duplicados = numeros.map(num => num * 2);\nconsole.log(duplicados); // Salida: [2, 4, 6, 8, 10]\n```",
+            "Otro ejemplo de un método de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst filtrados = numeros.filter(num => num > 3);\nconsole.log(filtrados); // Salida: [4, 5]\n```"
+          ]
+        }
+      },
+      {
+        "tag": "promise_js",
+        "patterns": [
+          "promise",
+          "promesa",
+          "JavaScript promise",
+          "promise examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's how to use a promise in JavaScript:\n```javascript\nconst myPromise = new Promise((resolve, reject) => {\n    const success = true;\n    if (success) {\n        resolve('Operation was successful');\n    } else {\n        reject('Operation failed');\n    }\n});\nmyPromise\n    .then(result => console.log(result))\n    .catch(error => console.log(error));\n```",
+            "Promises allow you to handle asynchronous operations. Example:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
           ],
-          "responses": {
-            "en": [
-              "Here's how to use a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
-              "Here's an example of a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
-            ],
-            "es": [
-              "Aquí está el código en JavaScript para usar un bucle while:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
-              "Aquí tienes un ejemplo de un bucle while en JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
-            ]
-          }
-        },
-        {
-          "tag": "break_statement_js",
-          "patterns": [
-            "break statement", "sentencia break", "JavaScript break", "break examples"
+          "es": [
+            "Aquí tienes cómo usar una promesa en JavaScript:\n```javascript\nconst miPromesa = new Promise((resolve, reject) => {\n    const exito = true;\n    if (exito) {\n        resolve('La operación fue exitosa');\n    } else {\n        reject('La operación falló');\n    }\n});\nmiPromesa\n    .then(resultado => console.log(resultado))\n    .catch(error => console.log(error));\n```",
+            "Las promesas te permiten manejar operaciones asíncronas. Ejemplo:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
+          ]
+        }
+      },
+      {
+        "tag": "async_await_js",
+        "patterns": [
+          "async await",
+          "JavaScript async",
+          "async await examples",
+          "Ejemplo async await"
+        ],
+        "responses": {
+          "en": [
+            "Here's how to use async/await in JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
+            "Async/await makes asynchronous code easier to read. Example:\n```javascript\nconst delay = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Wait for 2 seconds');\n    await delay(2000);\n    console.log('Done waiting!');\n};\nmain();\n```"
           ],
-          "responses": {
-            "en": [
-              "Here's how to use a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
-              "Here's an example of a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
-            ],
-            "es": [
-              "Aquí está el código en JavaScript para usar una sentencia break:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
-              "Aquí tienes un ejemplo de una sentencia break en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
-            ]
-          }
-        },
-        {
-          "tag": "continue_statement_js",
-          "patterns": [
-            "continue statement", "sentencia continue", "JavaScript continue", "continue examples"
+          "es": [
+            "Aquí tienes cómo usar async/await en JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
+            "Async/await hace que el código asíncrono sea más fácil de leer. Ejemplo:\n```javascript\nconst retraso = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Espera 2 segundos');\n    await retraso(2000);\n    console.log('¡Espera terminada!');\n};\nmain();\n```"
+          ]
+        }
+      },
+      {
+        "tag": "factorial_function_js",
+        "patterns": [
+          "factorial",
+          "función factorial",
+          "JavaScript factorial",
+          "factorial examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's how to calculate the factorial of a number in JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Output: 120\n```",
+            "This is an example of a recursive factorial function in JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Output: 24\n```"
           ],
-          "responses": {
-            "en": [
-              "Here's how to use a continue statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```",
-              "Here's an example of a continue statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```"
-            ],
-            "es": [
-              "Aquí está el código en JavaScript para usar una sentencia continue:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```",
-              "Aquí tienes un ejemplo de una sentencia continue en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```"
-            ]
-          }
-        },
-          {
-            "tag": "function_js",
-            "patterns": [
-              "function", "Ejemplo de función", "JavaScript function", "function examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's an example of a function in JavaScript:\n```javascript\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\nconsole.log(greet('John'));\n```",
-                "Here's how to define a function in JavaScript:\n```javascript\nfunction sum(a, b) {\n    return a + b;\n}\nconsole.log(sum(5, 3)); // Output: 8\n```"
-              ],
-              "es": [
-                "Aquí tienes un ejemplo de una función en JavaScript:\n```javascript\nfunction greet(name) {\n    return `¡Hola, ${name}!`;\n}\nconsole.log(greet('Juan'));\n```",
-                "Aquí está cómo definir una función en JavaScript:\n```javascript\nfunction suma(a, b) {\n    return a + b;\n}\nconsole.log(suma(5, 3)); // Salida: 8\n```"
-              ]
-            }
-          },
-          {
-            "tag": "arrow_function_js",
-            "patterns": [
-              "arrow function", "función flecha", "JavaScript arrow function", "arrow function examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's an example of an arrow function in JavaScript:\n```javascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));\n```",
-                "Arrow functions are a concise way to define functions in JavaScript:\n```javascript\nconst sum = (a, b) => a + b;\nconsole.log(sum(5, 3)); // Output: 8\n```"
-              ],
-              "es": [
-                "Aquí tienes un ejemplo de una función flecha en JavaScript:\n```javascript\nconst greet = (name) => `¡Hola, ${name}!`;\nconsole.log(greet('Juan'));\n```",
-                "Las funciones flecha son una forma concisa de definir funciones en JavaScript:\n```javascript\nconst suma = (a, b) => a + b;\nconsole.log(suma(5, 3)); // Salida: 8\n```"
-              ]
-            }
-          },
-          {
-            "tag": "array_methods_js",
-            "patterns": [
-              "array methods", "métodos de array", "JavaScript array methods", "array examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's an example of using array methods in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); // Output: [2, 4, 6, 8, 10]\n```",
-                "Another example of an array method in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filtered = numbers.filter(num => num > 3);\nconsole.log(filtered); // Output: [4, 5]\n```"
-              ],
-              "es": [
-                "Aquí tienes un ejemplo de cómo usar métodos de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst duplicados = numeros.map(num => num * 2);\nconsole.log(duplicados); // Salida: [2, 4, 6, 8, 10]\n```",
-                "Otro ejemplo de un método de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst filtrados = numeros.filter(num => num > 3);\nconsole.log(filtrados); // Salida: [4, 5]\n```"
-              ]
-            }
-          },
-          {
-            "tag": "promise_js",
-            "patterns": [
-              "promise", "promesa", "JavaScript promise", "promise examples"
-            ],
-            "responses": {
-              "en": [
-                "Here's how to use a promise in JavaScript:\n```javascript\nconst myPromise = new Promise((resolve, reject) => {\n    const success = true;\n    if (success) {\n        resolve('Operation was successful');\n    } else {\n        reject('Operation failed');\n    }\n});\nmyPromise\n    .then(result => console.log(result))\n    .catch(error => console.log(error));\n```",
-                "Promises allow you to handle asynchronous operations. Example:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
-              ],
-              "es": [
-                "Aquí tienes cómo usar una promesa en JavaScript:\n```javascript\nconst miPromesa = new Promise((resolve, reject) => {\n    const exito = true;\n    if (exito) {\n        resolve('La operación fue exitosa');\n    } else {\n        reject('La operación falló');\n    }\n});\nmiPromesa\n    .then(resultado => console.log(resultado))\n    .catch(error => console.log(error));\n```",
-                "Las promesas te permiten manejar operaciones asíncronas. Ejemplo:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
-              ]
-            }
-          },
-          {
-            "tag": "async_await_js",
-            "patterns": [
-              "async await", "JavaScript async", "async await examples", "Ejemplo async await"
-            ],
-            "responses": {
-              "en": [
-                "Here's how to use async/await in JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
-                "Async/await makes asynchronous code easier to read. Example:\n```javascript\nconst delay = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Wait for 2 seconds');\n    await delay(2000);\n    console.log('Done waiting!');\n};\nmain();\n```"
-              ],
-              "es": [
-                "Aquí tienes cómo usar async/await en JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
-                "Async/await hace que el código asíncrono sea más fácil de leer. Ejemplo:\n```javascript\nconst retraso = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Espera 2 segundos');\n    await retraso(2000);\n    console.log('¡Espera terminada!');\n};\nmain();\n```"
-              ]
-            }
-          },
-            {
-              "tag": "factorial_function_js",
-              "patterns": [
-                "factorial", "función factorial", "JavaScript factorial", "factorial examples"
-              ],
-              "responses": {
-                "en": [
-                  "Here's how to calculate the factorial of a number in JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Output: 120\n```",
-                  "This is an example of a recursive factorial function in JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Output: 24\n```"
-                ],
-                "es": [
-                  "Aquí tienes cómo calcular el factorial de un número en JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Salida: 120\n```",
-                  "Este es un ejemplo de una función recursiva para calcular el factorial en JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Salida: 24\n```"
-                ]
-              }
-            },
-            {
-              "tag": "bubble_sort_js",
-              "patterns": [
-                "bubble sort", "ordenamiento burbuja", "JavaScript bubble sort", "bubble sort examples"
-              ],
-              "responses": {
-                "en": [
-                  "Here's how to implement bubble sort in JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]\n```",
-                  "This is an example of bubble sort in JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Output: [2, 4, 5, 7]\n```"
-                ],
-                "es": [
-                  "Aquí tienes cómo implementar el ordenamiento burbuja en JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Salida: [2, 3, 4, 5, 8]\n```",
-                  "Este es un ejemplo del ordenamiento burbuja en JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Salida: [2, 4, 5, 7]\n```"
-                ]
-              }
-            },
-            {
-              "tag": "recursive_function_js",
-              "patterns": [
-                "recursive function", "función recursiva", "JavaScript recursion", "recursion examples"
-              ],
-              "responses": {
-                "en": [
-                  "Here's an example of a recursive function in JavaScript:\n```javascript\nfunction sumTo(n) {\n    if (n === 0) return 0;\n    return n + sumTo(n - 1);\n}\nconsole.log(sumTo(5)); // Output: 15\n```",
-                  "Recursive functions are useful for repetitive tasks. Example:\n```javascript\nconst reverseString = str => {\n    if (str === '') return '';\n    return reverseString(str.substr(1)) + str[0];\n};\nconsole.log(reverseString('hello')); // Output: 'olleh'\n```"
-                ],
-                "es": [
-                  "Aquí tienes un ejemplo de una función recursiva en JavaScript:\n```javascript\nfunction sumaHasta(n) {\n    if (n === 0) return 0;\n    return n + sumaHasta(n - 1);\n}\nconsole.log(sumaHasta(5)); // Salida: 15\n```",
-                  "Las funciones recursivas son útiles para tareas repetitivas. Ejemplo:\n```javascript\nconst reversaCadena = str => {\n    if (str === '') return '';\n    return reversaCadena(str.substr(1)) + str[0];\n};\nconsole.log(reversaCadena('hola')); // Salida: 'aloh'\n```"
-                ]
-              }
-            },
-            {
-              "tag": "fibonacci_js",
-              "patterns": [
-                "fibonacci", "fibonacci series", "JavaScript fibonacci", "fibonacci examples"
-              ],
-              "responses": {
-                "en": [
-                  "Here's how to calculate the Fibonacci series in JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Output: 8\n```",
-                  "This is an iterative approach to Fibonacci in JavaScript:\n```javascript\nfunction fibonacciIterative(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterative(6)); // Output: 8\n```"
-                ],
-                "es": [
-                  "Aquí tienes cómo calcular la serie de Fibonacci en JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Salida: 8\n```",
-                  "Este es un enfoque iterativo para Fibonacci en JavaScript:\n```javascript\nfunction fibonacciIterativo(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterativo(6)); // Salida: 8\n```"
-                ]
-              }
-            }
-          
-    ]
-  }     
-  
+          "es": [
+            "Aquí tienes cómo calcular el factorial de un número en JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Salida: 120\n```",
+            "Este es un ejemplo de una función recursiva para calcular el factorial en JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Salida: 24\n```"
+          ]
+        }
+      },
+      {
+        "tag": "bubble_sort_js",
+        "patterns": [
+          "bubble sort",
+          "ordenamiento burbuja",
+          "JavaScript bubble sort",
+          "bubble sort examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's how to implement bubble sort in JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]\n```",
+            "This is an example of bubble sort in JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Output: [2, 4, 5, 7]\n```"
+          ],
+          "es": [
+            "Aquí tienes cómo implementar el ordenamiento burbuja en JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Salida: [2, 3, 4, 5, 8]\n```",
+            "Este es un ejemplo del ordenamiento burbuja en JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Salida: [2, 4, 5, 7]\n```"
+          ]
+        }
+      },
+      {
+        "tag": "recursive_function_js",
+        "patterns": [
+          "recursive function",
+          "función recursiva",
+          "JavaScript recursion",
+          "recursion examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's an example of a recursive function in JavaScript:\n```javascript\nfunction sumTo(n) {\n    if (n === 0) return 0;\n    return n + sumTo(n - 1);\n}\nconsole.log(sumTo(5)); // Output: 15\n```",
+            "Recursive functions are useful for repetitive tasks. Example:\n```javascript\nconst reverseString = str => {\n    if (str === '') return '';\n    return reverseString(str.substr(1)) + str[0];\n};\nconsole.log(reverseString('hello')); // Output: 'olleh'\n```"
+          ],
+          "es": [
+            "Aquí tienes un ejemplo de una función recursiva en JavaScript:\n```javascript\nfunction sumaHasta(n) {\n    if (n === 0) return 0;\n    return n + sumaHasta(n - 1);\n}\nconsole.log(sumaHasta(5)); // Salida: 15\n```",
+            "Las funciones recursivas son útiles para tareas repetitivas. Ejemplo:\n```javascript\nconst reversaCadena = str => {\n    if (str === '') return '';\n    return reversaCadena(str.substr(1)) + str[0];\n};\nconsole.log(reversaCadena('hola')); // Salida: 'aloh'\n```"
+          ]
+        }
+      },
+      {
+        "tag": "fibonacci_js",
+        "patterns": [
+          "fibonacci",
+          "fibonacci series",
+          "JavaScript fibonacci",
+          "fibonacci examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's how to calculate the Fibonacci series in JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Output: 8\n```",
+            "This is an iterative approach to Fibonacci in JavaScript:\n```javascript\nfunction fibonacciIterative(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterative(6)); // Output: 8\n```"
+          ],
+          "es": [
+            "Aquí tienes cómo calcular la serie de Fibonacci en JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Salida: 8\n```",
+            "Este es un enfoque iterativo para Fibonacci en JavaScript:\n```javascript\nfunction fibonacciIterativo(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterativo(6)); // Salida: 8\n```"
+          ]
+        }
+      }
+    ,
+  {
+    "tag": "movie_recommendation",
+    "patterns": [
+      "Recommend me a movie",
+      "What movie should I watch?",
+      "Suggest a movie",
+      "Recomiéndame una película",
+      "¿Qué película debo ver?",
+      "Sugiere una película",
+      "movie",
+      "pelicula",
+      "recomendar",
+      "recomendame",
+      "recomiendame",
+      "recommendation",
+      "recommen"
+    ],
+    "responses": {
+      "en": [
+        "I recommend watching 'Inception'. It's a great movie!",
+        "How about 'The Shawshank Redemption'? It's a classic!",
+        "'Interstellar' is a fantastic choice if you enjoy sci-fi.",
+        "I recommend watching The Lord of the Ring trilogy, it's an amazing saga of Fantasy."
+      ],
+      "es": [
+        "Te recomiendo ver 'El origen'. ¡Es una gran película!",
+        "¿Qué tal 'Sueño de fuga'? ¡Es un clásico!",
+        "'Interestelar' es una elección fantástica si disfrutas de la ciencia ficción.",
+        "Te recomiendo ver la trilogia del Señor de los Anillos si eres fanatico de la Fantasia"
+      ]
+    }
+  },
+  {
+    "tag": "movie_genre",
+    "patterns": [
+      "Suggest me a comedy movie",
+      "What is a good action movie?",
+      "Tell me a romantic movie",
+      "Recomiéndame una película de comedia",
+      "¿Qué película de acción es buena?",
+      "Dime una película romántica",
+      "comedia",
+      "commedy",
+      "genero",
+      "genre",
+      "recomendacion",
+      "recommendation",
+      "romantica",
+      "romantico",
+      "romantic",
+      "pelicula",
+      "movie",
+      "accion",
+      "acción"
+    ],
+    "responses": {
+      "en": [
+        "For comedy, I suggest 'The Grand Budapest Hotel'.",
+        "'Mad Max: Fury Road' is an amazing action movie!",
+        "If you like romance, 'The Notebook' is a great pick."
+      ],
+      "es": [
+        "Para comedia, te sugiero 'El gran hotel Budapest'.",
+        "'Mad Max: Furia en el camino' es una increíble película de acción.",
+        "Si te gusta el romance, 'El diario de una pasión' es una excelente opción."
+      ]
+    }
+  },
+  {
+    "tag": "movie_info",
+    "patterns": [
+      "Tell me about 'Inception'",
+      "What is 'Titanic' about?",
+      "Dime sobre 'Avatar'",
+      "¿De qué trata 'El origen'?",
+      "¿Qué es 'Titanic'?",
+      "Habla sobre 'Avatar'",
+      "Inception",
+      "Origen",
+      "El Origen",
+      "Avatar",
+      "Titanic",
+      "Cuentame",
+      "Tell me"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' is a sci-fi thriller directed by Christopher Nolan, exploring dreams within dreams.",
+        "'Titanic' is a romantic drama set on the ill-fated RMS Titanic.",
+        "'Avatar' is a visually stunning film about humans and the Na'vi on Pandora."
+      ],
+      "es": [
+        "'El origen' es un thriller de ciencia ficción dirigido por Christopher Nolan, que explora sueños dentro de sueños.",
+        "'Titanic' es un drama romántico ambientado en el desafortunado RMS Titanic.",
+        "'Avatar' es una película visualmente impresionante sobre humanos y los Na'vi en Pandora."
+      ]
+    }
+  },
+  {
+    "tag": "movie_director",
+    "patterns": [
+      "Who directed 'Inception'?",
+      "Who is the director of 'Titanic'?",
+      "Who made 'Avatar'?",
+      "¿Quién dirigió 'El origen'?",
+      "¿Quién es el director de 'Titanic'?",
+      "¿Quién creó 'Avatar'?",
+      "director",
+      "movie director",
+      "director de pelicula",
+      "director de peliculas"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' was directed by Christopher Nolan.",
+        "'Titanic' was directed by James Cameron.",
+        "'Avatar' is also directed by James Cameron."
+      ],
+      "es": [
+        "'El origen' fue dirigido por Christopher Nolan.",
+        "'Titanic' fue dirigido por James Cameron.",
+        "'Avatar' también fue dirigido por James Cameron."
+      ]
+    }
+  },
+  {
+    "tag": "movie_release",
+    "patterns": [
+      "cuando salio Titanic",
+      "cuando estreno titanic",
+      "estreno",
+      "released",
+      "año",
+      "Fecha",
+      "date",
+      "fecha",
+      "year",
+      "When was 'Inception' released?",
+      "What year did 'Titanic' come out?",
+      "When did 'Avatar' premiere?",
+      "¿Cuándo se estrenó 'El origen'?",
+      "¿En qué año salió 'Titanic'?",
+      "¿Cuándo se estrenó 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' was released in 2010.",
+        "'Titanic' premiered in 1997.",
+        "'Avatar' was released in 2009."
+      ],
+      "es": [
+        "'El origen' se estrenó en 2010.",
+        "'Titanic' se estrenó en 1997.",
+        "'Avatar' se estrenó en 2009."
+      ]
+    }
+  },
+  {
+    "tag": "movie_actor",
+    "patterns": [
+      "actor",
+      "actriz",
+      "actres",
+      "protagonizo",
+      "protagonista",
+      "estrella",
+      "Inception",
+      "Origen",
+      "starred",
+      "Who starred in 'Inception'?",
+      "Who is the main actor in 'Titanic'?",
+      "Who plays the lead role in 'Avatar'?",
+      "¿Quién protagonizó 'El origen'?",
+      "¿Quién es el actor principal en 'Titanic'?",
+      "¿Quién interpreta el papel principal en 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "Leonardo DiCaprio starred in 'Inception'.",
+        "Leonardo DiCaprio also played the main role in 'Titanic'.",
+        "Sam Worthington played the lead role in 'Avatar'."
+      ],
+      "es": [
+        "Leonardo DiCaprio protagonizó 'El origen'.",
+        "Leonardo DiCaprio también interpretó el papel principal en 'Titanic'.",
+        "Sam Worthington interpretó el papel principal en 'Avatar'."
+      ]
+    }
+  },
+  {
+    "tag": "movie_awards",
+    "patterns": [
+      "premio",
+      "premios",
+      "awards",
+      "award",
+      "win",
+      "gano",
+      "Oscar",
+      "oscars",
+      "premio recibio",
+      "recibio",
+      "Did 'Inception' win any awards?",
+      "How many Oscars did 'Titanic' win?",
+      "What awards did 'Avatar' receive?",
+      "¿Ganó 'El origen' algún premio?",
+      "¿Cuántos Oscars ganó 'Titanic'?",
+      "¿Qué premios recibió 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' won 4 Academy Awards, including Best Cinematography.",
+        "'Titanic' won 11 Oscars, including Best Picture and Best Director.",
+        "'Avatar' won 3 Oscars for Art Direction, Cinematography, and Visual Effects."
+      ],
+      "es": [
+        "'El origen' ganó 4 premios de la Academia, incluyendo Mejor Cinematografía.",
+        "'Titanic' ganó 11 Oscars, incluyendo Mejor Película y Mejor Director.",
+        "'Avatar' ganó 3 Oscars por Dirección de Arte, Cinematografía y Efectos Visuales."
+      ]
+    }
+  },
+  {
+    "tag": "movie_quotes",
+    "patterns": [
+      "frase",
+      "frases",
+      "cita",
+      "citas",
+      "pelicula",
+      "quote",
+      "quotes",
+      "give me a",
+      "terminator",
+      "star wars",
+      "batman",
+      "bruce",
+      "joker",
+      "Give me a famous movie quote",
+      "Tell me a quote from a movie",
+      "Dime una frase famosa de una película",
+      "Dame una cita de una película"
+    ],
+    "responses": {
+      "en": [
+        "'I'll be back.' - The Terminator",
+        "'May the Force be with you.' - Star Wars",
+        "'Why so serious?' - The Dark Knight"
+      ],
+      "es": [
+        "'Volveré.' - Terminator",
+        "'Que la Fuerza te acompañe.' - Star Wars",
+        "'¿Por qué tan serio?' - El Caballero Oscuro"
+      ]
+    }
+  },
+  {
+    "tag": "movie_genre",
+    "patterns": [
+      "genero",
+      "genre",
+      "Origen",
+      "Inception",
+      "pelicula",
+      "tipo",
+      "género",
+      "Avatar",
+      "type",
+      "What genre is 'Inception'?",
+      "What type of movie is 'Titanic'?",
+      "¿Qué género es 'El origen'?",
+      "¿Qué tipo de película es 'Titanic'?",
+      "What genre does 'Avatar' belong to?",
+      "¿A qué género pertenece 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' is a science fiction thriller.",
+        "'Titanic' is a romantic drama with historical elements.",
+        "'Avatar' is a science fiction and adventure movie."
+      ],
+      "es": [
+        "'El origen' es un thriller de ciencia ficción.",
+        "'Titanic' es un drama romántico con elementos históricos.",
+        "'Avatar' es una película de ciencia ficción y aventura."
+      ]
+    }
+  },
+  {
+    "tag": "movie_runtime",
+    "patterns": [
+      "duracion",
+      "duration",
+      "long",
+      "Inception",
+      "Titanic",
+      "dura",
+      "Avatar",
+      "How long is 'Inception'?",
+      "What is the runtime of 'Titanic'?",
+      "¿Cuánto dura 'El origen'?",
+      "¿Cuál es la duración de 'Titanic'?",
+      "How long does 'Avatar' last?",
+      "¿Cuánto dura 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' has a runtime of 148 minutes.",
+        "'Titanic' runs for 195 minutes.",
+        "'Avatar' lasts 162 minutes."
+      ],
+      "es": [
+        "'El origen' tiene una duración de 148 minutos.",
+        "'Titanic' dura 195 minutos.",
+        "'Avatar' tiene una duración de 162 minutos."
+      ]
+    }
+  },
+  {
+    "tag": "movie_trivia",
+    "patterns": [
+      "fact",
+      "fun",
+      "dato",
+      "curioso",
+      "dato curioso",
+      "Origen",
+      "Tell me a fact about 'Inception'",
+      "Share a trivia about 'Titanic'",
+      "¿Sabías algo interesante sobre 'El origen'?",
+      "Dime un dato curioso sobre 'Titanic'",
+      "Give me a fun fact about 'Avatar'",
+      "Dame un dato curioso sobre 'Avatar'"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' took nearly 10 years for Christopher Nolan to write.",
+        "'Titanic' used a life-size replica of the ship for filming.",
+        "'Avatar' was the first movie to gross over $2 billion worldwide."
+      ],
+      "es": [
+        "'El origen' tardó casi 10 años en ser escrito por Christopher Nolan.",
+        "'Titanic' utilizó una réplica a tamaño real del barco para las grabaciones.",
+        "'Avatar' fue la primera película en recaudar más de 2 mil millones de dólares en todo el mundo."
+      ]
+    }
+  },
+  {
+    "tag": "movie_soundtrack",
+    "patterns": [
+      "banda",
+      "sonora",
+      "sonido",
+      "compuso",
+      "compositor",
+      "musica",
+      "list",
+      "soundtrack",
+      "track",
+      "sound",
+      "composed",
+      "made",
+      "Who composed the music for 'Inception'?",
+      "Who made the soundtrack for 'Titanic'?",
+      "¿Quién compuso la música de 'El origen'?",
+      "¿Quién hizo la banda sonora de 'Titanic'?",
+      "Who worked on the music for 'Avatar'?",
+      "¿Quién trabajó en la música de 'Avatar'?"
+    ],
+    "responses": {
+      "en": [
+        "'Inception' features music composed by Hans Zimmer.",
+        "'Titanic' has a famous soundtrack by James Horner, including 'My Heart Will Go On'.",
+        "'Avatar' also features music by James Horner."
+      ],
+      "es": [
+        "'El origen' tiene música compuesta por Hans Zimmer.",
+        "'Titanic' incluye una banda sonora famosa de James Horner, incluyendo 'My Heart Will Go On'.",
+        "'Avatar' también cuenta con música de James Horner."
+      ]
+    }
+  },
+  {
+    "tag": "movie_remake",
+    "patterns": [
+      "remake",
+      "versiones",
+      "version",
+      "remade",
+      "dato",
+      "fact",
+      "Was 'Titanic' ever remade?",
+      "Are there other versions of 'Avatar'?",
+      "¿Se hizo algún remake de 'Titanic'?",
+      "¿Existen otras versiones de 'Avatar'?",
+      "Is there a sequel to 'Inception'?",
+      "¿Hay una secuela de 'El origen'?"
+    ],
+    "responses": {
+      "en": [
+        "'Titanic' has not been officially remade but inspired many documentaries and specials.",
+        "'Avatar' has sequels like 'Avatar: The Way of Water'.",
+        "'Inception' does not have a sequel but has left fans speculating for years."
+      ],
+      "es": [
+        "'Titanic' no ha sido oficialmente rehecho, pero inspiró muchos documentales y especiales.",
+        "'Avatar' tiene secuelas como 'Avatar: El Camino del Agua'.",
+        "'El origen' no tiene una secuela, pero ha dejado a los fanáticos especulando durante años."
+      ]
+    }
+  },
+  {
+    "tag": "lotr_trilogy",
+    "patterns": [
+      "señor de los anillos",
+      "anillos",
+      "señor",
+      "lord",
+      "rings",
+      "fantasy",
+      "aragorn",
+      "legolas",
+      "trilogia",
+      "lord of the rings",
+      "Tell me about the Lord of the Rings trilogy",
+      "What are the movies in the Lord of the Rings series?",
+      "Háblame de la trilogía de El Señor de los Anillos",
+      "¿Cuáles son las películas de El Señor de los Anillos?",
+      "Who directed The Lord of the Rings?",
+      "¿Quién dirigió El Señor de los Anillos?"
+    ],
+    "responses": {
+      "en": [
+        "The Lord of the Rings trilogy includes 'The Fellowship of the Ring', 'The Two Towers', and 'The Return of the King'.",
+        "Directed by Peter Jackson, the trilogy is based on the novels by J.R.R. Tolkien.",
+        "'The Return of the King' won 11 Academy Awards, including Best Picture."
+      ],
+      "es": [
+        "La trilogía de El Señor de los Anillos incluye 'La Comunidad del Anillo', 'Las Dos Torres' y 'El Retorno del Rey'.",
+        "Dirigida por Peter Jackson, la trilogía está basada en las novelas de J.R.R. Tolkien.",
+        "'El Retorno del Rey' ganó 11 premios Oscar, incluyendo Mejor Película."
+      ]
+    }
+  },
+  {
+    "tag": "dune_movie",
+    "patterns": [
+      "dune",
+      "duna",
+      "parte",
+      "sci-fi",
+      "Tell me about Dune (Part 1)",
+      "What is Dune about?",
+      "Háblame de Dune (Parte 1)",
+      "¿De qué trata Dune?",
+      "When is Dune: Part 2 releasing?",
+      "¿Cuándo se estrena Dune: Parte 2?"
+    ],
+    "responses": {
+      "en": [
+        "'Dune' (Part 1) is a science fiction epic directed by Denis Villeneuve, based on Frank Herbert's novel. It was released in 2021.",
+        "The movie follows Paul Atreides and his journey on the desert planet Arrakis.",
+        "'Dune: Part 2' is scheduled for release in late 2024, continuing the story of Paul and the rise of House Atreides."
+      ],
+      "es": [
+        "'Dune' (Parte 1) es una épica de ciencia ficción dirigida por Denis Villeneuve, basada en la novela de Frank Herbert. Se estrenó en 2021.",
+        "La película sigue a Paul Atreides y su viaje en el planeta desértico Arrakis.",
+        "'Dune: Parte 2' está programada para estrenarse a finales de 2024, continuando la historia de Paul y el ascenso de la Casa Atreides."
+      ]
+    }
+  },
+  {
+    "tag": "star_wars",
+    "patterns": [
+      "star",
+      "wars",
+      "sci-fi",
+      "ciencia",
+      "ficcion",
+      "ciencia ficcion",
+      "ciencia ficción",
+      "ficción",
+      "guerra",
+      "galaxias",
+      "guerra de las galaxias",
+      "Tell me about Star Wars",
+      "How many Star Wars movies are there?",
+      "Háblame de Star Wars",
+      "¿Cuántas películas de Star Wars hay?",
+      "Who created Star Wars?",
+      "¿Quién creó Star Wars?"
+    ],
+    "responses": {
+      "en": [
+        "Star Wars is a sci-fi saga created by George Lucas, starting with 'A New Hope' in 1977.",
+        "There are three main trilogies: the Original Trilogy, the Prequel Trilogy, and the Sequel Trilogy, totaling 9 main movies.",
+        "There are also spin-offs like 'Rogue One' and 'Solo: A Star Wars Story'."
+      ],
+      "es": [
+        "Star Wars es una saga de ciencia ficción creada por George Lucas, comenzando con 'Una Nueva Esperanza' en 1977.",
+        "Hay tres trilogías principales: la Trilogía Original, la Trilogía de Precuelas y la Trilogía de Secuelas, sumando 9 películas principales.",
+        "También hay spin-offs como 'Rogue One' y 'Han Solo: Una Historia de Star Wars'."
+      ]
+    }
+  },
+  {
+    "tag": "movie_awards",
+    "patterns": [
+      "movie",
+      "premio",
+      "premios",
+      "award",
+      "awards",
+      "lotr",
+      "lord",
+      "rings",
+      "anillos",
+      "señor",
+      "rey",
+      "Did The Return of the King win any awards?",
+      "¿Ganó premios El Retorno del Rey?",
+      "What awards has Dune won?",
+      "¿Qué premios ganó Dune?",
+      "Have any Star Wars movies won Oscars?",
+      "¿Alguna película de Star Wars ganó un Oscar?"
+    ],
+    "responses": {
+      "en": [
+        "'The Return of the King' won 11 Oscars, including Best Picture and Best Director.",
+        "'Dune' (Part 1) won 6 Oscars in 2022, including Best Cinematography and Best Visual Effects.",
+        "The original Star Wars movie won 6 Oscars in 1978, including Best Visual Effects."
+      ],
+      "es": [
+        "'El Retorno del Rey' ganó 11 premios Oscar, incluyendo Mejor Película y Mejor Director.",
+        "'Dune' (Parte 1) ganó 6 premios Oscar en 2022, incluyendo Mejor Cinematografía y Mejores Efectos Visuales.",
+        "La película original de Star Wars ganó 6 premios Oscar en 1978, incluyendo Mejores Efectos Visuales."
+      ]
+    }
+  },
+  {
+    "tag": "movie_quotes",
+    "patterns": [
+      "cita",
+      "citas",
+      "quote",
+      "quotes",
+      "famosa",
+      "famous",
+      "star",
+      "wars",
+      "interesante",
+      "curioso",
+      "dato",
+      "datos",
+      "curiosos",
+      "Give me a quote from The Lord of the Rings",
+      "What is a famous line from Dune?",
+      "¿Dime una frase de El Señor de los Anillos?",
+      "¿Cuál es una frase famosa de Dune?",
+      "Tell me a Star Wars quote",
+      "Dame una frase de Star Wars"
+    ],
+    "responses": {
+      "en": [
+        "'One does not simply walk into Mordor.' - Boromir, The Lord of the Rings",
+        "'Fear is the mind-killer.' - Paul Atreides, Dune",
+        "'May the Force be with you.' - Star Wars"
+      ],
+      "es": [
+        "'Uno no simplemente entra a Mordor.' - Boromir, El Señor de los Anillos",
+        "'El miedo es el asesino de la mente.' - Paul Atreides, Dune",
+        "'Que la Fuerza te acompañe.' - Star Wars"
+      ]
+    }
+  },
+  {
+    "tag": "help",
+    "patterns": [
+      "Help",
+      "Help me",
+      "I need",
+      "help",
+      "Ayuda",
+      "Ayudame",
+      "Necesito"
+    ],
+    "responses": {
+      "en": [
+        "Sure, I can help you. What do you need?",
+        "I'm here to help. What can I do for you?",
+        "How can I assist you?"
+      ],
+      "es": [
+        "Claro, puedo ayudarte. ¿Qué necesitas?",
+        "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
+        "¿Cómo puedo ayudarte?"
+      ]
+    }
+  },
+  {
+    "tag": "if_else_js",
+    "patterns": [
+      "if else",
+      "if else statement",
+      "Ejemplo if else",
+      "JavaScript if else",
+      "if else examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use an if-else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```",
+        "Here's an example of an if-else statement in JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x is greater than 5');\n} else {\n    console.log('x is less than or equal to 5');\n}```"
+      ],
+      "es": [
+        "Aquí está el código en JavaScript para usar una sentencia if-else:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```",
+        "Aquí tienes un ejemplo de una sentencia if-else en JavaScript:\n```javascript\nlet x = 3;\nif (x > 5) {\n    console.log('x es mayor que 5');\n} else {\n    console.log('x es menor o igual a 5');\n}```"
+      ]
+    }
+  },
+  {
+    "tag": "for_loop_js",
+    "patterns": [
+      "for loop",
+      "Ejemplo for loop",
+      "JavaScript for loop",
+      "bucle for",
+      "for loop examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use a for loop in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
+        "Here's an example of a for loop in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```"
+      ],
+      "es": [
+        "Aquí está el código en JavaScript para usar un bucle for:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```",
+        "Aquí tienes un ejemplo de un bucle for en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}```"
+      ]
+    }
+  },
+  {
+    "tag": "while_loop_js",
+    "patterns": [
+      "while loop",
+      "Ejemplo while loop",
+      "JavaScript while",
+      "bucle while",
+      "while examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+        "Here's an example of a while loop in JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+      ],
+      "es": [
+        "Aquí está el código en JavaScript para usar un bucle while:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```",
+        "Aquí tienes un ejemplo de un bucle while en JavaScript:\n```javascript\nlet i = 0;\nwhile (i < 5) {\n    console.log(i);\n    i++;\n}```"
+      ]
+    }
+  },
+  {
+    "tag": "break_statement_js",
+    "patterns": [
+      "break statement",
+      "sentencia break",
+      "JavaScript break",
+      "break examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+        "Here's an example of a break statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+      ],
+      "es": [
+        "Aquí está el código en JavaScript para usar una sentencia break:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```",
+        "Aquí tienes un ejemplo de una sentencia break en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        break;\n    }\n    console.log(i);\n}```"
+      ]
+    }
+  },
+  {
+    "tag": "continue_statement_js",
+    "patterns": [
+      "continue statement",
+      "sentencia continue",
+      "JavaScript continue",
+      "continue examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use a continue statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```",
+        "Here's an example of a continue statement in JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```"
+      ],
+      "es": [
+        "Aquí está el código en JavaScript para usar una sentencia continue:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```",
+        "Aquí tienes un ejemplo de una sentencia continue en JavaScript:\n```javascript\nfor (let i = 0; i < 5; i++) {\n    if (i === 3) {\n        continue;\n    }\n    console.log(i);\n}```"
+      ]
+    }
+  },
+  {
+    "tag": "function_js",
+    "patterns": [
+      "function",
+      "Ejemplo de función",
+      "JavaScript function",
+      "function examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's an example of a function in JavaScript:\n```javascript\nfunction greet(name) {\n    return `Hello, ${name}!`;\n}\nconsole.log(greet('John'));\n```",
+        "Here's how to define a function in JavaScript:\n```javascript\nfunction sum(a, b) {\n    return a + b;\n}\nconsole.log(sum(5, 3)); // Output: 8\n```"
+      ],
+      "es": [
+        "Aquí tienes un ejemplo de una función en JavaScript:\n```javascript\nfunction greet(name) {\n    return `¡Hola, ${name}!`;\n}\nconsole.log(greet('Juan'));\n```",
+        "Aquí está cómo definir una función en JavaScript:\n```javascript\nfunction suma(a, b) {\n    return a + b;\n}\nconsole.log(suma(5, 3)); // Salida: 8\n```"
+      ]
+    }
+  },
+  {
+    "tag": "arrow_function_js",
+    "patterns": [
+      "arrow function",
+      "función flecha",
+      "JavaScript arrow function",
+      "arrow function examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's an example of an arrow function in JavaScript:\n```javascript\nconst greet = (name) => `Hello, ${name}!`;\nconsole.log(greet('John'));\n```",
+        "Arrow functions are a concise way to define functions in JavaScript:\n```javascript\nconst sum = (a, b) => a + b;\nconsole.log(sum(5, 3)); // Output: 8\n```"
+      ],
+      "es": [
+        "Aquí tienes un ejemplo de una función flecha en JavaScript:\n```javascript\nconst greet = (name) => `¡Hola, ${name}!`;\nconsole.log(greet('Juan'));\n```",
+        "Las funciones flecha son una forma concisa de definir funciones en JavaScript:\n```javascript\nconst suma = (a, b) => a + b;\nconsole.log(suma(5, 3)); // Salida: 8\n```"
+      ]
+    }
+  },
+  {
+    "tag": "array_methods_js",
+    "patterns": [
+      "array methods",
+      "métodos de array",
+      "JavaScript array methods",
+      "array examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's an example of using array methods in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(num => num * 2);\nconsole.log(doubled); // Output: [2, 4, 6, 8, 10]\n```",
+        "Another example of an array method in JavaScript:\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst filtered = numbers.filter(num => num > 3);\nconsole.log(filtered); // Output: [4, 5]\n```"
+      ],
+      "es": [
+        "Aquí tienes un ejemplo de cómo usar métodos de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst duplicados = numeros.map(num => num * 2);\nconsole.log(duplicados); // Salida: [2, 4, 6, 8, 10]\n```",
+        "Otro ejemplo de un método de array en JavaScript:\n```javascript\nconst numeros = [1, 2, 3, 4, 5];\nconst filtrados = numeros.filter(num => num > 3);\nconsole.log(filtrados); // Salida: [4, 5]\n```"
+      ]
+    }
+  },
+  {
+    "tag": "promise_js",
+    "patterns": [
+      "promise",
+      "promesa",
+      "JavaScript promise",
+      "promise examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use a promise in JavaScript:\n```javascript\nconst myPromise = new Promise((resolve, reject) => {\n    const success = true;\n    if (success) {\n        resolve('Operation was successful');\n    } else {\n        reject('Operation failed');\n    }\n});\nmyPromise\n    .then(result => console.log(result))\n    .catch(error => console.log(error));\n```",
+        "Promises allow you to handle asynchronous operations. Example:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
+      ],
+      "es": [
+        "Aquí tienes cómo usar una promesa en JavaScript:\n```javascript\nconst miPromesa = new Promise((resolve, reject) => {\n    const exito = true;\n    if (exito) {\n        resolve('La operación fue exitosa');\n    } else {\n        reject('La operación falló');\n    }\n});\nmiPromesa\n    .then(resultado => console.log(resultado))\n    .catch(error => console.log(error));\n```",
+        "Las promesas te permiten manejar operaciones asíncronas. Ejemplo:\n```javascript\nfetch('https://jsonplaceholder.typicode.com/todos/1')\n    .then(response => response.json())\n    .then(data => console.log(data))\n    .catch(error => console.log('Error:', error));\n```"
+      ]
+    }
+  },
+  {
+    "tag": "async_await_js",
+    "patterns": [
+      "async await",
+      "JavaScript async",
+      "async await examples",
+      "Ejemplo async await"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to use async/await in JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
+        "Async/await makes asynchronous code easier to read. Example:\n```javascript\nconst delay = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Wait for 2 seconds');\n    await delay(2000);\n    console.log('Done waiting!');\n};\nmain();\n```"
+      ],
+      "es": [
+        "Aquí tienes cómo usar async/await en JavaScript:\n```javascript\nconst fetchData = async () => {\n    try {\n        const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.log('Error:', error);\n    }\n};\nfetchData();\n```",
+        "Async/await hace que el código asíncrono sea más fácil de leer. Ejemplo:\n```javascript\nconst retraso = ms => new Promise(resolve => setTimeout(resolve, ms));\nconst main = async () => {\n    console.log('Espera 2 segundos');\n    await retraso(2000);\n    console.log('¡Espera terminada!');\n};\nmain();\n```"
+      ]
+    }
+  },
+  {
+    "tag": "factorial_function_js",
+    "patterns": [
+      "factorial",
+      "función factorial",
+      "JavaScript factorial",
+      "factorial examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to calculate the factorial of a number in JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Output: 120\n```",
+        "This is an example of a recursive factorial function in JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Output: 24\n```"
+      ],
+      "es": [
+        "Aquí tienes cómo calcular el factorial de un número en JavaScript:\n```javascript\nfunction factorial(n) {\n    if (n === 0 || n === 1) {\n        return 1;\n    } else {\n        return n * factorial(n - 1);\n    }\n}\nconsole.log(factorial(5)); // Salida: 120\n```",
+        "Este es un ejemplo de una función recursiva para calcular el factorial en JavaScript:\n```javascript\nconst factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));\nconsole.log(factorial(4)); // Salida: 24\n```"
+      ]
+    }
+  },
+  {
+    "tag": "bubble_sort_js",
+    "patterns": [
+      "bubble sort",
+      "ordenamiento burbuja",
+      "JavaScript bubble sort",
+      "bubble sort examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to implement bubble sort in JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Output: [2, 3, 4, 5, 8]\n```",
+        "This is an example of bubble sort in JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Output: [2, 4, 5, 7]\n```"
+      ],
+      "es": [
+        "Aquí tienes cómo implementar el ordenamiento burbuja en JavaScript:\n```javascript\nfunction bubbleSort(arr) {\n    let n = arr.length;\n    for (let i = 0; i < n; i++) {\n        for (let j = 0; j < n - i - 1; j++) {\n            if (arr[j] > arr[j + 1]) {\n                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];\n            }\n        }\n    }\n    return arr;\n}\nconsole.log(bubbleSort([5, 3, 8, 4, 2])); // Salida: [2, 3, 4, 5, 8]\n```",
+        "Este es un ejemplo del ordenamiento burbuja en JavaScript:\n```javascript\nconst bubbleSort = arr => {\n    let swapped;\n    do {\n        swapped = false;\n        for (let i = 0; i < arr.length - 1; i++) {\n            if (arr[i] > arr[i + 1]) {\n                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];\n                swapped = true;\n            }\n        }\n    } while (swapped);\n    return arr;\n};\nconsole.log(bubbleSort([7, 4, 5, 2])); // Salida: [2, 4, 5, 7]\n```"
+      ]
+    }
+  },
+  {
+    "tag": "recursive_function_js",
+    "patterns": [
+      "recursive function",
+      "función recursiva",
+      "JavaScript recursion",
+      "recursion examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's an example of a recursive function in JavaScript:\n```javascript\nfunction sumTo(n) {\n    if (n === 0) return 0;\n    return n + sumTo(n - 1);\n}\nconsole.log(sumTo(5)); // Output: 15\n```",
+        "Recursive functions are useful for repetitive tasks. Example:\n```javascript\nconst reverseString = str => {\n    if (str === '') return '';\n    return reverseString(str.substr(1)) + str[0];\n};\nconsole.log(reverseString('hello')); // Output: 'olleh'\n```"
+      ],
+      "es": [
+        "Aquí tienes un ejemplo de una función recursiva en JavaScript:\n```javascript\nfunction sumaHasta(n) {\n    if (n === 0) return 0;\n    return n + sumaHasta(n - 1);\n}\nconsole.log(sumaHasta(5)); // Salida: 15\n```",
+        "Las funciones recursivas son útiles para tareas repetitivas. Ejemplo:\n```javascript\nconst reversaCadena = str => {\n    if (str === '') return '';\n    return reversaCadena(str.substr(1)) + str[0];\n};\nconsole.log(reversaCadena('hola')); // Salida: 'aloh'\n```"
+      ]
+    }
+  },
+  {
+    "tag": "fibonacci_js",
+    "patterns": [
+      "fibonacci",
+      "fibonacci series",
+      "JavaScript fibonacci",
+      "fibonacci examples"
+    ],
+    "responses": {
+      "en": [
+        "Here's how to calculate the Fibonacci series in JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Output: 8\n```",
+        "This is an iterative approach to Fibonacci in JavaScript:\n```javascript\nfunction fibonacciIterative(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterative(6)); // Output: 8\n```"
+      ],
+      "es": [
+        "Aquí tienes cómo calcular la serie de Fibonacci en JavaScript:\n```javascript\nfunction fibonacci(n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}\nconsole.log(fibonacci(6)); // Salida: 8\n```",
+        "Este es un enfoque iterativo para Fibonacci en JavaScript:\n```javascript\nfunction fibonacciIterativo(n) {\n    let a = 0, b = 1, c;\n    for (let i = 2; i <= n; i++) {\n        c = a + b;\n        a = b;\n        b = c;\n    }\n    return b;\n}\nconsole.log(fibonacciIterativo(6)); // Salida: 8\n```"
+      ]
+    }
+  }
+]
+}
