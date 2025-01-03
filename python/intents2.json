@@ -37,6 +37,28 @@
       }
     },
     {
+      "tag": "dato_curioso_tag",
+      "patterns": [
+        "Tell me", "a", "fun fact", "Give me", "a", "fun fact", "Dato", "curioso", "Cuentame", "un", "dato", "interesante"
+      ],
+      "responses": {
+        "en": [
+          "Did you know that honey never spoils?",
+          "The Eiffel Tower can be 15 cm taller during the summer",
+          "The first oranges weren't orange",
+          "The shortest war in history lasted only 38 minutes"
+        ],
+        "es": [
+          "¿Sabías que la miel nunca se echa a perder?",
+          "La Torre Eiffel puede ser 15 cm más alta durante el verano",
+          "Las primeras naranjas no eran naranjas",
+          "La guerra más corta de la historia duró solo 38 minutos"
+        ]
+     
+      }
+    } 
+    ,
+    {
       "tag": "thanks",
       "patterns": [
         "Thanks", "Thank you", "That's helpful", "Gracias", "Muy amable", "Te lo agradezco"
@@ -250,7 +272,43 @@
           "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
         ]
       }
-    }, 
+    },
+    {
+      "tag": "while_tag",
+      "patterns": [
+        "How to use", "a", "while", "loop", "Example", "of a", "while", "loop", "Codigo", "para", "usar", "un", "bucle", "while", "Ejemplo", "de un", "bucle", "while", "Python while", "while examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use a while loop:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+          "Here's an example of a while loop in Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+        ],
+        "es": [
+          "Aquí está el código en Python para usar un bucle while:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+          "Aquí tienes un ejemplo de un bucle while en Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+        ]
+      }
+    },
+    { 
+      "tag": "break_tag",
+      "patterns": [
+        "How to use", "a", "break", "statement", "Example", "of a", "break", "statement", "Codigo", "para", "usar", "una", "sentencia", "break", "Ejemplo", "de una", "sentencia", "break", "Python break", "break examples"
+      ],
+      "responses": {
+        "en": [
+          "Here's the Python code to use a break statement:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+          "Here's an example of a break statement in Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+        ],
+        "es": [
+          "Aquí está el código en Python para usar una sentencia break:\n```python\nfor i in range(5):\n   if i == 3:\n        break\n    print(i)```",
+          "Aquí tienes un ejemplo de una sentencia break en Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+        ]
+      }
+    },
+
+
+
+
     {
       "tag": "help",
       "patterns": [

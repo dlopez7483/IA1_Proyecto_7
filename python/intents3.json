@@ -1,0 +1,332 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi", "Hello", "Good day", "How are you", "Is anyone there?", "Hola", "Buenas", "Que tal"
+        ],
+        "responses": {
+          "en": [
+            "Hello, thanks for visiting",
+            "Good to see you again",
+            "Hi there, how can I help?"
+          ],
+          "es": [
+            "¡Hola!",
+            "¡Qué tal!",
+            "¿En qué puedo ayudarte?"
+          ]
+        }
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye", "Goodbye", "See you later", "Good day", "Adios", "Hasta luego", "Nos vemos"
+        ],
+        "responses": {
+          "en": [
+            "See you later, thanks for visiting",
+            "Have a nice day",
+            "Bye! Come back again"
+          ],
+          "es": [
+            "¡Adiós!",
+            "¡Hasta luego!",
+            "Nos vemos pronto"
+          ]
+        }
+      },
+      {
+        "tag": "dato_curioso_tag",
+        "patterns": [
+         "fun fact", "fun fact", "Dato", "curioso", "Cuentame", "dato", "interesante"
+        ],
+        "responses": {
+          "en": [
+            "Did you know that honey never spoils?",
+            "The Eiffel Tower can be 15 cm taller during the summer",
+            "The first oranges weren't orange",
+            "The shortest war in history lasted only 38 minutes"
+          ],
+          "es": [
+            "¿Sabías que la miel nunca se echa a perder?",
+            "La Torre Eiffel puede ser 15 cm más alta durante el verano",
+            "Las primeras naranjas no eran naranjas",
+            "La guerra más corta de la historia duró solo 38 minutos"
+          ]
+       
+        }
+      } 
+      ,
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks", "Thank you", "That's helpful", "Gracias", "Muy amable", "Te lo agradezco"
+        ],
+        "responses": {
+          "en": [
+            "Happy to help!",
+            "Any time!",
+            "My pleasure"
+          ],
+          "es": [
+            "¡Con gusto!",
+            "¡A cualquier hora!",
+            "¡Es un placer!"
+          ]
+        }
+      },
+      {
+        "tag": "forloop_python",
+        "patterns": [
+         "for loop" ,"for" ,"bucle for","for loop", "Python loops"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use a for loop:\n```python\nfor i in range(5):\n    print(i)```",
+            "Here's the code for a for loop in Python:\n```python\nfor i in range(10):\n    print(i)```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar un bucle for:\n```python\nfor i in range(5):\n    print(i)```",
+            "Aquí tienes un ejemplo de un bucle for en Python:\n```python\nfor i in range(10):\n    print(i)```"
+          ]
+        }
+      },
+      {
+        "tag": "list_sort_python",
+        "patterns": [
+         "sort a list", "Sorting lists", "Sort list", "sorting", " sort list","ordenar","ordenar lista","ordenada"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to sort a list:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort()\nprint('Sorted list:', my_list)```"
+          ],
+          "es": [
+            "Aquí está el código en Python para ordenar una lista:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort()\nprint('Lista ordenada:', mi_lista)```"
+          ]
+        }
+      },
+      {
+        "tag": "list_append_python",
+        "patterns": [
+         "add an item", "Example with append", "Appending", "agregar", "append", "agregar","añadir lista", "agregar elemento a lista", "append item to list"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to add an item to a list:\n```python\nmy_list = [1, 2, 3]\nmy_list.append(4)\nprint(my_list)```"
+          ],
+          "es": [
+            "Aquí está el código en Python para agregar un elemento a una lista:\n```python\nmi_lista = [1, 2, 3]\nmi_lista.append(4)\nprint(mi_lista)```"
+          ]
+        }
+      },
+      {
+        "tag": "list_remove_python",
+        "patterns": [
+         "remover"," remove", "Removing","eliminar","elemento", "remove", "quitar", "eliminar elemento de lista", "remove item from list"
+        ],
+        "responses": {
+          "en": [
+            "Here's Python code to remove an item from a list:\n```python\nmy_list = [1, 2, 3, 4]\nmy_list.remove(3)\nprint(my_list)```"
+          ],
+          "es": [
+            "Aquí tienes un código en Python para eliminar un elemento de una lista:\n```python\nmi_lista = [1, 2, 3, 4]\nmi_lista.remove(3)\nprint(mi_lista)```"
+          ]
+        }
+      },
+      {
+        "tag": "list_reverse_sort_python",
+        "patterns": [
+          "reverse sort", "orden inverso", "Reversed","reversa","inverso", "Reversed sorting","inversamente"
+        ],
+        "responses": {
+          "en": [
+            "Here's Python code to sort a list in reverse order:\n```python\nmy_list = [5, 3, 8, 6]\nmy_list.sort(reverse=True)\nprint('Sorted list in reverse:', my_list)```"
+          ],
+          "es": [
+            "Aquí está el código en Python para ordenar una lista en orden inverso:\n```python\nmi_lista = [5, 3, 8, 6]\nmi_lista.sort(reverse=True)\nprint('Lista ordenada en reversa:', mi_lista)```"
+          ]
+        }
+      },
+      {
+        "tag": "area_circle_request_python",
+        "patterns": [
+          "area", "circle", "area of a circle",
+          "area", "circulo", "area de un circulo"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to calculate the area of a circle:\n```python\nimport math\ndef area_of_circle(radius):\n    return math.pi * radius ** 2\n\nprint(area_of_circle(5))```"
+          ],
+          "es": [
+            "Aquí está el código en Python para calcular el área de un círculo:\n```python\nimport math\ndef area_de_circulo(radio):\n    return math.pi * radio ** 2\n\nprint(area_de_circulo(5))```"
+          ]
+        }
+      },
+      {
+        "tag": "factorial_request",
+        "patterns": [
+           "factorial", "of a", "number","factorial of a number",
+            "factorial de un numero"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to calculate the factorial of a number:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+          ],
+          "es": [
+            "Aquí está el código en Python para calcular el factorial de un número:\n```python\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))```"
+          ]
+        }
+        
+      },
+      {
+        "tag": "fibonacci_request",
+        "patterns": [
+         "Fibonacci", "sequence", "Fibonacci sequence",
+        "secuencia", "secuencia Fibonacci"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to find the Fibonacci sequence:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+          ],
+          "es": [
+            "Aquí está el código en Python para encontrar la secuencia de Fibonacci:\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n - 1) + fibonacci(n - 2)\n\nfor i in range(10):\n    print(fibonacci(i))```"
+          ]
+        }
+      },
+      {
+        "tag": "bubble_sort_request",
+        "patterns": [
+           "bubble", "sort", "algorithm", "bubble sort algorithm",
+           "algoritmo", "de", "ordenamiento", "burbuja", "algoritmo de ordenamiento burbuja"
+        ],
+        "responses": {
+          "en": [
+            "Here's Python code for a bubble sort algorithm:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Sorted array:', arr)```"
+          ],
+          "es": [
+            "Aquí tienes el código en Python para un algoritmo de ordenamiento burbuja:\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n\narr = [64, 34, 25, 12, 22, 11, 90]\nbubble_sort(arr)\nprint('Arreglo ordenado:', arr)```"
+          ]
+        }
+      },
+      {
+        "tag": "gcd_request",
+        "patterns": [
+          "calculate gcd", "the", "greatest", "common divisor",
+          "calcular maximo comun divisor", "maximo", "comun", "divisor"
+        ],
+        "responses": {
+          "en": [
+            "Here's Python code to find the greatest common divisor (GCD):\n```python\ndef gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(gcd(48, 18))```"
+          ],
+          "es": [
+            "Aquí está el código en Python para calcular el máximo común divisor (MCD):\n```python\ndef mcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\nprint(mcd(48, 18))```"
+          ]
+        }
+      },
+      {
+        "tag": "if_tag",
+        "patterns": [
+           "Codigo if", "if statement", "sentencia if", "if", "Ejemplo if", "if", "Python if", "if examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use an if statement:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```",
+            "Here's an example of an if statement in Python:\n```python\nx = 10\nif x > 5:\n    print('x is greater than 5')```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar una sentencia if:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```",
+            "Aquí tienes un ejemplo de una sentencia if en Python:\n```python\nx = 10\nif x > 5:\n    print('x es mayor que 5')```"
+          ]
+        }
+        
+      },
+      {
+        "tag": "else_tag",
+        "patterns": [
+          "else", "else statement", "Ejemplo else", "Python else", "else examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use an else statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```",
+            "Here's an example of an else statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelse:\n    print('x is less than or equal to 5')```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar una sentencia else:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```",
+            "Aquí tienes un ejemplo de una sentencia else en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelse:\n    print('x es menor o igual a 5')```"
+          ]
+        }
+      },
+      {
+        "tag": "elif_tag",
+        "patterns": [
+         "elif", "sentencia elif", "Ejemplo elif", "Python elif", "elif examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use an elif statement:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```",
+            "Here's an example of an elif statement in Python:\n```python\nx = 3\nif x > 5:\n    print('x is greater than 5')\nelif x == 5:\n   print('x is equal to 5')\nelse:\n    print('x is less than 5')```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar una sentencia elif:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```",
+            "Aquí tienes un ejemplo de una sentencia elif en Python:\n```python\nx = 3\nif x > 5:\n    print('x es mayor que 5')\nelif x == 5:\n   print('x es igual a 5')\nelse:\n    print('x es menor que 5')```"
+          ]
+        }
+      },
+      {
+        "tag": "while_tag",
+        "patterns": [
+           "while", "Ejemplo while", "bucle while", "Python while", "while examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use a while loop:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+            "Here's an example of a while loop in Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar un bucle while:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```",
+            "Aquí tienes un ejemplo de un bucle while en Python:\n```python\ni = 0\nwhile i < 5:\n    print(i)\n    i += 1```"
+          ]
+        }
+      },
+      { 
+        "tag": "break_tag",
+        "patterns": [
+         "break", "sentencia break", "Python break", "break examples"
+        ],
+        "responses": {
+          "en": [
+            "Here's the Python code to use a break statement:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```",
+            "Here's an example of a break statement in Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+          ],
+          "es": [
+            "Aquí está el código en Python para usar una sentencia break:\n```python\nfor i in range(5):\n   if i == 3:\n        break\n    print(i)```",
+            "Aquí tienes un ejemplo de una sentencia break en Python:\n```python\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)```"
+          ]
+        }
+      },
+  
+  
+  
+  
+      {
+        "tag": "help",
+        "patterns": [
+          "Help", "Help me", "I need" ,"help", "Ayuda", "Ayudame", "Necesito"
+        ],
+        "responses": {
+          "en": [
+            "Sure, I can help you. What do you need?",
+            "I'm here to help. What can I do for you?",
+            "How can I assist you?"
+          ],
+          "es": [
+            "Claro, puedo ayudarte. ¿Qué necesitas?",
+            "Estoy aquí para ayudarte. ¿En qué puedo asistirte?",
+            "¿Cómo puedo ayudarte?"
+          ]
+        }
+      }
+    ]
+  }     
+  

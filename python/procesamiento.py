@@ -13,7 +13,7 @@ from sklearn.preprocessing import LabelEncoder
 from deep_translator import GoogleTranslator
 
 # Cargar los datos del archivo intents.json
-with open('intents2.json', 'r', encoding='utf-8') as content:
+with open('intents3.json', 'r', encoding='utf-8') as content:
     data = json.load(content)
 
 # Preprocesar los datos
@@ -74,7 +74,6 @@ def detectar_idioma(mensaje):
             return 'es'
     except:
         return 'es'  # Por defecto, asumir español
-
 # Chatbot en acción
 '''
 
