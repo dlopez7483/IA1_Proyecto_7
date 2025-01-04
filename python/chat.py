@@ -20,7 +20,7 @@ translator = GoogleTranslator()
 model = None
 
 # Cargar datos
-intents_file = "intents4.json"  # Cambia esta ruta según corresponda
+intents_file = "intents5.json"  # Cambia esta ruta según corresponda
 model_file = "model.h5"       # Cambia esta ruta según corresponda
 
 with open(intents_file, 'r', encoding='utf-8') as content:

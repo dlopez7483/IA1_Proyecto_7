@@ -13,7 +13,7 @@ from sklearn.preprocessing import LabelEncoder
 from deep_translator import GoogleTranslator
 
 # Cargar los datos del archivo intents.json
-with open('intents4.json', 'r', encoding='utf-8') as content:
+with open('intents5.json', 'r', encoding='utf-8') as content:
     data = json.load(content)
 
 # Preprocesar los datos

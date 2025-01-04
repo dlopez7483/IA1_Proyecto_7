@@ -477,7 +477,827 @@
             "¿Cómo puedo ayudarte?"
           ]
         }
+      },
+      {
+        "tag": "temperature_facts",
+        "patterns": [
+          "Tell me about temperature", "Datos de temperatura", "Información sobre temperatura", "¿Cómo varía la temperatura?"
+        ],
+        "responses": {
+          "en": [
+            "The highest temperature ever recorded on Earth was 56.7°C (134°F) in Death Valley, USA.",
+            "Temperatures in Antarctica can drop as low as -89.2°C (-128.6°F)."
+          ],
+          "es": [
+            "La temperatura más alta registrada en la Tierra fue de 56.7°C (134°F) en Death Valley, EE. UU.",
+            "Las temperaturas en la Antártida pueden bajar hasta -89.2°C (-128.6°F)."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "rainfall_facts",
+        "patterns": [
+          "Tell me about rain", "Datos sobre lluvia", "Información sobre precipitaciones", "¿Cuánto llueve?"
+        ],
+        "responses": {
+          "en": [
+            "Mawsynram, India, holds the record for the highest annual rainfall with 11,871 mm (467.4 inches).",
+            "Rain drops can fall at speeds of up to 18 mph (29 km/h)."
+          ],
+          "es": [
+            "Mawsynram, India, tiene el récord de mayor precipitación anual con 11,871 mm (467.4 pulgadas).",
+            "Las gotas de lluvia pueden caer a velocidades de hasta 18 mph (29 km/h)."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "wind_facts",
+        "patterns": [
+          "Tell me about wind", "Datos sobre viento", "Información sobre viento", "¿Cómo es el viento?"
+        ],
+        "responses": {
+          "en": [
+            "The fastest wind speed ever recorded was 253 mph (408 km/h) during a tornado in Oklahoma, USA.",
+            "Wind is caused by differences in atmospheric pressure."
+          ],
+          "es": [
+            "La velocidad del viento más alta registrada fue de 253 mph (408 km/h) durante un tornado en Oklahoma, EE. UU.",
+            "El viento es causado por diferencias en la presión atmosférica."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "snow_facts",
+        "patterns": [
+          "Tell me about snow", "Datos sobre nieve", "Información sobre nieve", "¿Qué es la nieve?"
+        ],
+        "responses": {
+          "en": [
+            "The largest snowflake ever recorded was 15 inches (38 cm) wide and 8 inches (20 cm) thick.",
+            "Snow isn't always white; it can appear pink or red due to algae."
+          ],
+          "es": [
+            "El copo de nieve más grande registrado tenía 15 pulgadas (38 cm) de ancho y 8 pulgadas (20 cm) de grosor.",
+            "La nieve no siempre es blanca; puede parecer rosa o roja debido a las algas."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "storm_facts",
+        "patterns": [
+          "Tell me about storms", "Datos sobre tormentas", "Información sobre tormentas", "¿Qué es una tormenta?"
+        ],
+        "responses": {
+          "en": [
+            "The deadliest storm in history was the 1970 Bhola cyclone, killing over 500,000 people in Bangladesh.",
+            "A single lightning strike can heat the air to 30,000 Kelvin (53,540°F)."
+          ],
+          "es": [
+            "La tormenta más mortal de la historia fue el ciclón Bhola de 1970, que mató a más de 500,000 personas en Bangladesh.",
+            "Un solo rayo puede calentar el aire a 30,000 Kelvin (53,540°F)."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "cloud_facts",
+        "patterns": [
+          "Tell me about clouds", "Datos sobre nubes", "Información sobre nubes", "¿Qué son las nubes?"
+        ],
+        "responses": {
+          "en": [
+            "The highest clouds in the Earth's atmosphere are called noctilucent clouds, found in the mesosphere.",
+            "A cloud can weigh more than a million pounds due to water content."
+          ],
+          "es": [
+            "Las nubes más altas en la atmósfera terrestre se llaman nubes noctilucentes, ubicadas en la mesosfera.",
+            "Una nube puede pesar más de un millón de libras debido al contenido de agua."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "sun_facts",
+        "patterns": [
+          "Tell me about the sun", "Datos sobre el sol", "Información sobre el sol", "¿Qué es el sol?"
+        ],
+        "responses": {
+          "en": [
+            "The sun's surface temperature is about 5,500°C (9,932°F).",
+            "The sun provides Earth with more energy in an hour than humans use in a year."
+          ],
+          "es": [
+            "La temperatura de la superficie del sol es de aproximadamente 5,500°C (9,932°F).",
+            "El sol proporciona a la Tierra más energía en una hora de la que los humanos usan en un año."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "hurricane_facts",
+        "patterns": [
+          "Tell me about hurricanes", "Datos sobre huracanes", "Información sobre huracanes", "¿Qué es un huracán?"
+        ],
+        "responses": {
+          "en": [
+            "Hurricane Katrina caused over $125 billion in damage in the USA in 2005.",
+            "The eye of a hurricane is calm, with clear skies."
+          ],
+          "es": [
+            "El huracán Katrina causó más de $125 mil millones en daños en EE. UU. en 2005.",
+            "El ojo de un huracán es tranquilo, con cielos despejados."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+      {
+        "tag": "fog_facts",
+        "patterns": [
+          "Tell me about fog", "Datos sobre niebla", "Información sobre niebla", "¿Qué es la niebla?"
+        ],
+        "responses": {
+          "en": [
+            "Fog forms when the air temperature and dew point are within about 2.5°C (4°F) of each other.",
+            "The foggiest place on Earth is Grand Banks, near Newfoundland."
+          ],
+          "es": [
+            "La niebla se forma cuando la temperatura del aire y el punto de rocío están a unos 2.5°C (4°F) entre sí.",
+            "El lugar con más niebla en la Tierra es Grand Banks, cerca de Terranova."
+          ]
+        },
+        "context_filter": "weather_context"
+      },
+
+      {
+        "tag": "class_syntax",
+        "patterns": [
+          "class syntax", "how to define a class", "clase", "cómo crear una clase", "create class"
+        ],
+        "responses": {
+          "en": {
+            "python": ["Here's the Python syntax to define a class:\npython\nclass MyClass:\n    def _init_(self, attribute):\n        self.attribute = attribute\n\nmy_object = MyClass('value')"],
+            "js": ["Here's the JavaScript syntax to define a class:\njavascript\nclass MyClass {\n    constructor(attribute) {\n        this.attribute = attribute;\n    }\n}\n\nconst myObject = new MyClass('value');"]
+          },
+          "es": {
+            "python": ["Aquí está la sintaxis en Python para definir una clase:\npython\nclass MyClass:\n    def _init_(self, attribute):\n        self.attribute = attribute\n\nmy_object = MyClass('valor')"],
+            "js": ["Aquí está la sintaxis en JavaScript para definir una clase:\njavascript\nclass MyClass {\n    constructor(attribute) {\n        this.attribute = attribute;\n    }\n}\n\nconst myObject = new MyClass('valor');"]
+          }
+        },
+        "context_set": "class_context"
+      },
+      {
+        "tag": "function_syntax",
+        "patterns": [
+          "function syntax", "how to define a function", "crear función", "cómo crear una función", "create function"
+        ],
+        "responses": {
+          "en": {
+            "python": ["Here's the Python syntax to define a function:\npython\ndef my_function(param):\n    return param * 2\n\nresult = my_function(5)"],
+            "js": ["Here's the JavaScript syntax to define a function:\njavascript\nfunction myFunction(param) {\n    return param * 2;\n}\n\nconst result = myFunction(5);"]
+          },
+          "es": {
+            "python": ["Aquí está la sintaxis en Python para definir una función:\npython\ndef my_function(param):\n    return param * 2\n\nresult = my_function(5)"],
+            "js": ["Aquí está la sintaxis en JavaScript para definir una función:\njavascript\nfunction myFunction(param) {\n    return param * 2;\n}\n\nconst result = myFunction(5);"]
+          }
+        },
+        "context_set": "function_context"
+      },
+      {
+        "tag": "native_functions",
+        "patterns": [
+          "native functions", "common functions", "funciones nativas", "principales funciones", "main functions in programming"
+        ],
+        "responses": {
+          "en": {
+            "python": ["Here are some common Python functions:\n- len()\n- type()\n- print()\n- range()\n- map()"],
+            "js": ["Here are some common JavaScript functions:\n- console.log()\n- parseInt()\n- parseFloat()\n- setTimeout()\n- JSON.stringify()"]
+          },
+          "es": {
+            "python": ["Aquí hay algunas funciones comunes en Python:\n- len()\n- type()\n- print()\n- range()\n- map()"],
+            "js": ["Aquí hay algunas funciones comunes en JavaScript:\n- console.log()\n- parseInt()\n- parseFloat()\n- setTimeout()\n- JSON.stringify()"]
+          }
+        },
+        "context_set": "native_functions_context"
+      },
+      {
+        "tag": "refactor_code",
+        "patterns": [
+          "code refactoring", "how to refactor code", "mejores prácticas para refactorizar", "refactorización de código", "best practices for code refactoring"
+        ],
+        "responses": {
+          "en": {
+            "python": ["Here are best practices for refactoring Python code:\n- Use meaningful variable and function names.\n- Break down large functions into smaller ones.\n- Remove redundant code.\n- Write unit tests to ensure functionality remains intact."],
+            "js": ["Here are best practices for refactoring JavaScript code:\n- Use meaningful variable and function names.\n- Avoid deeply nested callbacks (use async/await).\n- Modularize your code using ES6 modules.\n- Remove unused variables and functions."]
+          },
+          "es": {
+            "python": ["Aquí hay mejores prácticas para refactorizar código en Python:\n- Usa nombres significativos para variables y funciones.\n- Divide funciones grandes en funciones más pequeñas.\n- Elimina código redundante.\n- Escribe pruebas unitarias para garantizar que la funcionalidad se mantenga intacta."],
+            "js": ["Aquí hay mejores prácticas para refactorizar código en JavaScript:\n- Usa nombres significativos para variables y funciones.\n- Evita callbacks profundamente anidados (usa async/await).\n- Modula tu código usando módulos ES6.\n- Elimina variables y funciones no utilizadas."]
+          }
+        },
+        "context_set": "refactor_code_context"
+      },
+      {
+        "tag": "linked_list",
+        "patterns": [
+          "linked list", "how to create a linked list", "lista enlazada", "crear lista enlazada", "linked list example"
+        ],
+        "responses": {
+          "en": {
+            "python": ["Here's how to create a simple linked list in Python:\npython\nclass Node:\n    def _init(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init_(self):\n        self.head = None\n\n    def append(self, data):\n        new_node = Node(data)\n        if not self.head:\n            self.head = new_node\n        else:\n            current = self.head\n            while current.next:\n                current = current.next\n            current.next = new_node\n\nll = LinkedList()\nll.append(10)\nll.append(20)"],
+            "js": ["Here's how to create a simple linked list in JavaScript:\njavascript\nclass Node {\n    constructor(data) {\n        this.data = data;\n        this.next = null;\n    }\n}\n\nclass LinkedList {\n    constructor() {\n        this.head = null;\n    }\n\n    append(data) {\n        const newNode = new Node(data);\n        if (!this.head) {\n            this.head = newNode;\n        } else {\n            let current = this.head;\n            while (current.next) {\n                current = current.next;\n            }\n            current.next = newNode;\n        }\n    }\n}\n\nconst ll = new LinkedList();\nll.append(10);\nll.append(20);"]
+          },
+          "es": {
+            "python": ["Aquí está cómo crear una lista enlazada simple en Python:\npython\nclass Node:\n    def _init(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init_(self):\n        self.head = None\n\n    def append(self, data):\n        new_node = Node(data)\n        if not self.head:\n            self.head = new_node\n        else:\n            current = self.head\n            while current.next:\n                current = current.next\n            current.next = new_node\n\nll = LinkedList()\nll.append(10)\nll.append(20)"],
+            "js": ["Aquí está cómo crear una lista enlazada simple en JavaScript:\njavascript\nclass Node {\n    constructor(data) {\n        this.data = data;\n        this.next = null;\n    }\n}\n\nclass LinkedList {\n    constructor() {\n        this.head = null;\n    }\n\n    append(data) {\n        const newNode = new Node(data);\n        if (!this.head) {\n            this.head = newNode;\n        } else {\n            let current = this.head;\n            while (current.next) {\n                current = current.next;\n            }\n            current.next = newNode;\n        }\n    }\n}\n\nconst ll = new LinkedList();\nll.append(10);\nll.append(20);"]
+          }
+        },
+        "context_set": "linked_list_context"
+      },
+      {
+        "tag": "movie_recommendation",
+        "patterns": [
+          "Recommend me a movie",
+          "What movie should I watch?",
+          "Suggest a movie",
+          "Recomiéndame una película",
+          "¿Qué película debo ver?",
+          "Sugiere una película",
+          "movie",
+          "pelicula",
+          "recomendar",
+          "recomendame",
+          "recomiendame",
+          "recommendation",
+          "recommen"
+        ],
+        "responses": {
+          "en": [
+            "I recommend watching 'Inception'. It's a great movie!",
+            "How about 'The Shawshank Redemption'? It's a classic!",
+            "'Interstellar' is a fantastic choice if you enjoy sci-fi.",
+            "I recommend watching The Lord of the Ring trilogy, it's an amazing saga of Fantasy."
+          ],
+          "es": [
+            "Te recomiendo ver 'El origen'. ¡Es una gran película!",
+            "¿Qué tal 'Sueño de fuga'? ¡Es un clásico!",
+            "'Interestelar' es una elección fantástica si disfrutas de la ciencia ficción.",
+            "Te recomiendo ver la trilogia del Señor de los Anillos si eres fanatico de la Fantasia"
+          ]
+        }
+      },
+      {
+        "tag": "movie_genre",
+        "patterns": [
+          "Suggest me a comedy movie",
+          "What is a good action movie?",
+          "Tell me a romantic movie",
+          "Recomiéndame una película de comedia",
+          "¿Qué película de acción es buena?",
+          "Dime una película romántica",
+          "comedia",
+          "commedy",
+          "genero",
+          "genre",
+          "recomendacion",
+          "recommendation",
+          "romantica",
+          "romantico",
+          "romantic",
+          "pelicula",
+          "movie",
+          "accion",
+          "acción"
+        ],
+        "responses": {
+          "en": [
+            "For comedy, I suggest 'The Grand Budapest Hotel'.",
+            "'Mad Max: Fury Road' is an amazing action movie!",
+            "If you like romance, 'The Notebook' is a great pick."
+          ],
+          "es": [
+            "Para comedia, te sugiero 'El gran hotel Budapest'.",
+            "'Mad Max: Furia en el camino' es una increíble película de acción.",
+            "Si te gusta el romance, 'El diario de una pasión' es una excelente opción."
+          ]
+        }
+      },
+      {
+        "tag": "movie_info",
+        "patterns": [
+          "Tell me about 'Inception'",
+          "What is 'Titanic' about?",
+          "Dime sobre 'Avatar'",
+          "¿De qué trata 'El origen'?",
+          "¿Qué es 'Titanic'?",
+          "Habla sobre 'Avatar'",
+          "Inception",
+          "Origen",
+          "El Origen",
+          "Avatar",
+          "Titanic",
+          "Cuentame",
+          "Tell me"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' is a sci-fi thriller directed by Christopher Nolan, exploring dreams within dreams.",
+            "'Titanic' is a romantic drama set on the ill-fated RMS Titanic.",
+            "'Avatar' is a visually stunning film about humans and the Na'vi on Pandora."
+          ],
+          "es": [
+            "'El origen' es un thriller de ciencia ficción dirigido por Christopher Nolan, que explora sueños dentro de sueños.",
+            "'Titanic' es un drama romántico ambientado en el desafortunado RMS Titanic.",
+            "'Avatar' es una película visualmente impresionante sobre humanos y los Na'vi en Pandora."
+          ]
+        }
+      },
+      {
+        "tag": "movie_director",
+        "patterns": [
+          "Who directed 'Inception'?",
+          "Who is the director of 'Titanic'?",
+          "Who made 'Avatar'?",
+          "¿Quién dirigió 'El origen'?",
+          "¿Quién es el director de 'Titanic'?",
+          "¿Quién creó 'Avatar'?",
+          "director",
+          "movie director",
+          "director de pelicula",
+          "director de peliculas"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' was directed by Christopher Nolan.",
+            "'Titanic' was directed by James Cameron.",
+            "'Avatar' is also directed by James Cameron."
+          ],
+          "es": [
+            "'El origen' fue dirigido por Christopher Nolan.",
+            "'Titanic' fue dirigido por James Cameron.",
+            "'Avatar' también fue dirigido por James Cameron."
+          ]
+        }
+      },
+      {
+        "tag": "movie_release",
+        "patterns": [
+          "cuando salio Titanic",
+          "cuando estreno titanic",
+          "estreno",
+          "released",
+          "año",
+          "Fecha",
+          "date",
+          "fecha",
+          "year",
+          "When was 'Inception' released?",
+          "What year did 'Titanic' come out?",
+          "When did 'Avatar' premiere?",
+          "¿Cuándo se estrenó 'El origen'?",
+          "¿En qué año salió 'Titanic'?",
+          "¿Cuándo se estrenó 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' was released in 2010.",
+            "'Titanic' premiered in 1997.",
+            "'Avatar' was released in 2009."
+          ],
+          "es": [
+            "'El origen' se estrenó en 2010.",
+            "'Titanic' se estrenó en 1997.",
+            "'Avatar' se estrenó en 2009."
+          ]
+        }
+      },
+      {
+        "tag": "movie_actor",
+        "patterns": [
+          "actor",
+          "actriz",
+          "actres",
+          "protagonizo",
+          "protagonista",
+          "estrella",
+          "Inception",
+          "Origen",
+          "starred",
+          "Who starred in 'Inception'?",
+          "Who is the main actor in 'Titanic'?",
+          "Who plays the lead role in 'Avatar'?",
+          "¿Quién protagonizó 'El origen'?",
+          "¿Quién es el actor principal en 'Titanic'?",
+          "¿Quién interpreta el papel principal en 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "Leonardo DiCaprio starred in 'Inception'.",
+            "Leonardo DiCaprio also played the main role in 'Titanic'.",
+            "Sam Worthington played the lead role in 'Avatar'."
+          ],
+          "es": [
+            "Leonardo DiCaprio protagonizó 'El origen'.",
+            "Leonardo DiCaprio también interpretó el papel principal en 'Titanic'.",
+            "Sam Worthington interpretó el papel principal en 'Avatar'."
+          ]
+        }
+      },
+      {
+        "tag": "movie_awards",
+        "patterns": [
+          "premio",
+          "premios",
+          "awards",
+          "award",
+          "win",
+          "gano",
+          "Oscar",
+          "oscars",
+          "premio recibio",
+          "recibio",
+          "Did 'Inception' win any awards?",
+          "How many Oscars did 'Titanic' win?",
+          "What awards did 'Avatar' receive?",
+          "¿Ganó 'El origen' algún premio?",
+          "¿Cuántos Oscars ganó 'Titanic'?",
+          "¿Qué premios recibió 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' won 4 Academy Awards, including Best Cinematography.",
+            "'Titanic' won 11 Oscars, including Best Picture and Best Director.",
+            "'Avatar' won 3 Oscars for Art Direction, Cinematography, and Visual Effects."
+          ],
+          "es": [
+            "'El origen' ganó 4 premios de la Academia, incluyendo Mejor Cinematografía.",
+            "'Titanic' ganó 11 Oscars, incluyendo Mejor Película y Mejor Director.",
+            "'Avatar' ganó 3 Oscars por Dirección de Arte, Cinematografía y Efectos Visuales."
+          ]
+        }
+      },
+      {
+        "tag": "movie_quotes",
+        "patterns": [
+          "frase",
+          "frases",
+          "cita",
+          "citas",
+          "pelicula",
+          "quote",
+          "quotes",
+          "give me a",
+          "terminator",
+          "star wars",
+          "batman",
+          "bruce",
+          "joker",
+          "Give me a famous movie quote",
+          "Tell me a quote from a movie",
+          "Dime una frase famosa de una película",
+          "Dame una cita de una película"
+        ],
+        "responses": {
+          "en": [
+            "'I'll be back.' - The Terminator",
+            "'May the Force be with you.' - Star Wars",
+            "'Why so serious?' - The Dark Knight"
+          ],
+          "es": [
+            "'Volveré.' - Terminator",
+            "'Que la Fuerza te acompañe.' - Star Wars",
+            "'¿Por qué tan serio?' - El Caballero Oscuro"
+          ]
+        }
+      },
+      {
+        "tag": "movie_genre",
+        "patterns": [
+          "genero",
+          "genre",
+          "Origen",
+          "Inception",
+          "pelicula",
+          "tipo",
+          "género",
+          "Avatar",
+          "type",
+          "What genre is 'Inception'?",
+          "What type of movie is 'Titanic'?",
+          "¿Qué género es 'El origen'?",
+          "¿Qué tipo de película es 'Titanic'?",
+          "What genre does 'Avatar' belong to?",
+          "¿A qué género pertenece 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' is a science fiction thriller.",
+            "'Titanic' is a romantic drama with historical elements.",
+            "'Avatar' is a science fiction and adventure movie."
+          ],
+          "es": [
+            "'El origen' es un thriller de ciencia ficción.",
+            "'Titanic' es un drama romántico con elementos históricos.",
+            "'Avatar' es una película de ciencia ficción y aventura."
+          ]
+        }
+      },
+      {
+        "tag": "movie_runtime",
+        "patterns": [
+          "duracion",
+          "duration",
+          "long",
+          "Inception",
+          "Titanic",
+          "dura",
+          "Avatar",
+          "How long is 'Inception'?",
+          "What is the runtime of 'Titanic'?",
+          "¿Cuánto dura 'El origen'?",
+          "¿Cuál es la duración de 'Titanic'?",
+          "How long does 'Avatar' last?",
+          "¿Cuánto dura 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' has a runtime of 148 minutes.",
+            "'Titanic' runs for 195 minutes.",
+            "'Avatar' lasts 162 minutes."
+          ],
+          "es": [
+            "'El origen' tiene una duración de 148 minutos.",
+            "'Titanic' dura 195 minutos.",
+            "'Avatar' tiene una duración de 162 minutos."
+          ]
+        }
+      },
+      {
+        "tag": "movie_trivia",
+        "patterns": [
+          "fact",
+          "fun",
+          "dato",
+          "curioso",
+          "dato curioso",
+          "Origen",
+          "Tell me a fact about 'Inception'",
+          "Share a trivia about 'Titanic'",
+          "¿Sabías algo interesante sobre 'El origen'?",
+          "Dime un dato curioso sobre 'Titanic'",
+          "Give me a fun fact about 'Avatar'",
+          "Dame un dato curioso sobre 'Avatar'"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' took nearly 10 years for Christopher Nolan to write.",
+            "'Titanic' used a life-size replica of the ship for filming.",
+            "'Avatar' was the first movie to gross over $2 billion worldwide."
+          ],
+          "es": [
+            "'El origen' tardó casi 10 años en ser escrito por Christopher Nolan.",
+            "'Titanic' utilizó una réplica a tamaño real del barco para las grabaciones.",
+            "'Avatar' fue la primera película en recaudar más de 2 mil millones de dólares en todo el mundo."
+          ]
+        }
+      },
+      {
+        "tag": "movie_soundtrack",
+        "patterns": [
+          "banda",
+          "sonora",
+          "sonido",
+          "compuso",
+          "compositor",
+          "musica",
+          "list",
+          "soundtrack",
+          "track",
+          "sound",
+          "composed",
+          "made",
+          "Who composed the music for 'Inception'?",
+          "Who made the soundtrack for 'Titanic'?",
+          "¿Quién compuso la música de 'El origen'?",
+          "¿Quién hizo la banda sonora de 'Titanic'?",
+          "Who worked on the music for 'Avatar'?",
+          "¿Quién trabajó en la música de 'Avatar'?"
+        ],
+        "responses": {
+          "en": [
+            "'Inception' features music composed by Hans Zimmer.",
+            "'Titanic' has a famous soundtrack by James Horner, including 'My Heart Will Go On'.",
+            "'Avatar' also features music by James Horner."
+          ],
+          "es": [
+            "'El origen' tiene música compuesta por Hans Zimmer.",
+            "'Titanic' incluye una banda sonora famosa de James Horner, incluyendo 'My Heart Will Go On'.",
+            "'Avatar' también cuenta con música de James Horner."
+          ]
+        }
+      },
+      {
+        "tag": "movie_remake",
+        "patterns": [
+          "remake",
+          "versiones",
+          "version",
+          "remade",
+          "dato",
+          "fact",
+          "Was 'Titanic' ever remade?",
+          "Are there other versions of 'Avatar'?",
+          "¿Se hizo algún remake de 'Titanic'?",
+          "¿Existen otras versiones de 'Avatar'?",
+          "Is there a sequel to 'Inception'?",
+          "¿Hay una secuela de 'El origen'?"
+        ],
+        "responses": {
+          "en": [
+            "'Titanic' has not been officially remade but inspired many documentaries and specials.",
+            "'Avatar' has sequels like 'Avatar: The Way of Water'.",
+            "'Inception' does not have a sequel but has left fans speculating for years."
+          ],
+          "es": [
+            "'Titanic' no ha sido oficialmente rehecho, pero inspiró muchos documentales y especiales.",
+            "'Avatar' tiene secuelas como 'Avatar: El Camino del Agua'.",
+            "'El origen' no tiene una secuela, pero ha dejado a los fanáticos especulando durante años."
+          ]
+        }
+      },
+      {
+        "tag": "lotr_trilogy",
+        "patterns": [
+          "señor de los anillos",
+          "anillos",
+          "señor",
+          "lord",
+          "rings",
+          "fantasy",
+          "aragorn",
+          "legolas",
+          "trilogia",
+          "lord of the rings",
+          "Tell me about the Lord of the Rings trilogy",
+          "What are the movies in the Lord of the Rings series?",
+          "Háblame de la trilogía de El Señor de los Anillos",
+          "¿Cuáles son las películas de El Señor de los Anillos?",
+          "Who directed The Lord of the Rings?",
+          "¿Quién dirigió El Señor de los Anillos?"
+        ],
+        "responses": {
+          "en": [
+            "The Lord of the Rings trilogy includes 'The Fellowship of the Ring', 'The Two Towers', and 'The Return of the King'.",
+            "Directed by Peter Jackson, the trilogy is based on the novels by J.R.R. Tolkien.",
+            "'The Return of the King' won 11 Academy Awards, including Best Picture."
+          ],
+          "es": [
+            "La trilogía de El Señor de los Anillos incluye 'La Comunidad del Anillo', 'Las Dos Torres' y 'El Retorno del Rey'.",
+            "Dirigida por Peter Jackson, la trilogía está basada en las novelas de J.R.R. Tolkien.",
+            "'El Retorno del Rey' ganó 11 premios Oscar, incluyendo Mejor Película."
+          ]
+        }
+      },
+      {
+        "tag": "dune_movie",
+        "patterns": [
+          "dune",
+          "duna",
+          "parte",
+          "sci-fi",
+          "Tell me about Dune (Part 1)",
+          "What is Dune about?",
+          "Háblame de Dune (Parte 1)",
+          "¿De qué trata Dune?",
+          "When is Dune: Part 2 releasing?",
+          "¿Cuándo se estrena Dune: Parte 2?"
+        ],
+        "responses": {
+          "en": [
+            "'Dune' (Part 1) is a science fiction epic directed by Denis Villeneuve, based on Frank Herbert's novel. It was released in 2021.",
+            "The movie follows Paul Atreides and his journey on the desert planet Arrakis.",
+            "'Dune: Part 2' is scheduled for release in late 2024, continuing the story of Paul and the rise of House Atreides."
+          ],
+          "es": [
+            "'Dune' (Parte 1) es una épica de ciencia ficción dirigida por Denis Villeneuve, basada en la novela de Frank Herbert. Se estrenó en 2021.",
+            "La película sigue a Paul Atreides y su viaje en el planeta desértico Arrakis.",
+            "'Dune: Parte 2' está programada para estrenarse a finales de 2024, continuando la historia de Paul y el ascenso de la Casa Atreides."
+          ]
+        }
+      },
+      {
+        "tag": "star_wars",
+        "patterns": [
+          "star",
+          "wars",
+          "sci-fi",
+          "ciencia",
+          "ficcion",
+          "ciencia ficcion",
+          "ciencia ficción",
+          "ficción",
+          "guerra",
+          "galaxias",
+          "guerra de las galaxias",
+          "Tell me about Star Wars",
+          "How many Star Wars movies are there?",
+          "Háblame de Star Wars",
+          "¿Cuántas películas de Star Wars hay?",
+          "Who created Star Wars?",
+          "¿Quién creó Star Wars?"
+        ],
+        "responses": {
+          "en": [
+            "Star Wars is a sci-fi saga created by George Lucas, starting with 'A New Hope' in 1977.",
+            "There are three main trilogies: the Original Trilogy, the Prequel Trilogy, and the Sequel Trilogy, totaling 9 main movies.",
+            "There are also spin-offs like 'Rogue One' and 'Solo: A Star Wars Story'."
+          ],
+          "es": [
+            "Star Wars es una saga de ciencia ficción creada por George Lucas, comenzando con 'Una Nueva Esperanza' en 1977.",
+            "Hay tres trilogías principales: la Trilogía Original, la Trilogía de Precuelas y la Trilogía de Secuelas, sumando 9 películas principales.",
+            "También hay spin-offs como 'Rogue One' y 'Han Solo: Una Historia de Star Wars'."
+          ]
+        }
+      },
+      {
+        "tag": "movie_awards",
+        "patterns": [
+          "movie",
+          "premio",
+          "premios",
+          "award",
+          "awards",
+          "lotr",
+          "lord",
+          "rings",
+          "anillos",
+          "señor",
+          "rey",
+          "Did The Return of the King win any awards?",
+          "¿Ganó premios El Retorno del Rey?",
+          "What awards has Dune won?",
+          "¿Qué premios ganó Dune?",
+          "Have any Star Wars movies won Oscars?",
+          "¿Alguna película de Star Wars ganó un Oscar?"
+        ],
+        "responses": {
+          "en": [
+            "'The Return of the King' won 11 Oscars, including Best Picture and Best Director.",
+            "'Dune' (Part 1) won 6 Oscars in 2022, including Best Cinematography and Best Visual Effects.",
+            "The original Star Wars movie won 6 Oscars in 1978, including Best Visual Effects."
+          ],
+          "es": [
+            "'El Retorno del Rey' ganó 11 premios Oscar, incluyendo Mejor Película y Mejor Director.",
+            "'Dune' (Parte 1) ganó 6 premios Oscar en 2022, incluyendo Mejor Cinematografía y Mejores Efectos Visuales.",
+            "La película original de Star Wars ganó 6 premios Oscar en 1978, incluyendo Mejores Efectos Visuales."
+          ]
+        }
+      },
+      {
+        "tag": "movie_quotes",
+        "patterns": [
+          "cita",
+          "citas",
+          "quote",
+          "quotes",
+          "famosa",
+          "famous",
+          "star",
+          "wars",
+          "interesante",
+          "curioso",
+          "dato",
+          "datos",
+          "curiosos",
+          "Give me a quote from The Lord of the Rings",
+          "What is a famous line from Dune?",
+          "¿Dime una frase de El Señor de los Anillos?",
+          "¿Cuál es una frase famosa de Dune?",
+          "Tell me a Star Wars quote",
+          "Dame una frase de Star Wars"
+        ],
+        "responses": {
+          "en": [
+            "'One does not simply walk into Mordor.' - Boromir, The Lord of the Rings",
+            "'Fear is the mind-killer.' - Paul Atreides, Dune",
+            "'May the Force be with you.' - Star Wars"
+          ],
+          "es": [
+            "'Uno no simplemente entra a Mordor.' - Boromir, El Señor de los Anillos",
+            "'El miedo es el asesino de la mente.' - Paul Atreides, Dune",
+            "'Que la Fuerza te acompañe.' - Star Wars"
+          ]
+        }
       }
           
     ]
+    
   }     
+
+
+
+
+  
